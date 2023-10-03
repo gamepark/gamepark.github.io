@@ -1,6 +1,6 @@
 ![logo](_media/logo.svg)
 
-# GamePark <small>6.8</small>
+# Game Park framework <small>6.8</small>
 
 > The best way to code a board game
 
