@@ -1,4 +1,4 @@
-![logo](_media/logo-icon.svg)
+![logo](_media/logo.svg)
 
 # GamePark <small>6.8</small>
 
