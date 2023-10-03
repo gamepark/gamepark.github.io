@@ -36,10 +36,6 @@ During the game, the material items move around the table and the players. At an
 
 **99% of a game state is about knowing what item we have, and at what location.**
 
-### Players
-
-To make the link between a player in the game, and the Game Park user behind, we use an identifier, the **player id**.
-
 ### Rules
 
 Most board game we adapt on Game Park have multiple sections in their rules: phases, rounds, steps, actions...
