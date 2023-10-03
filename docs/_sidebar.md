@@ -3,7 +3,7 @@
     - [Game choice](game-choice.md)
     - [Project initialization](project-initialization.md)
     - [Players identifiers](players-identifiers.md)
-    - Game setup
+    - [Game setup](game-setup.md)
     - Game start
     - Material display
     - Legal moves
@@ -41,10 +41,12 @@
     - Automatic rules
     - End of the game
 
-- Moving the material
-    - Creating an item
-    - Moving an item
-    - Deleting an item
+- Manipulating the material
+    - [The Material API](material-api.md)
+    - Filtering items
+    - Creating items
+    - Moving items
+    - Deleting items
     - Shuffling
     - Rolling dices
     - Throwing coins
