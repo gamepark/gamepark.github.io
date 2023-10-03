@@ -29,3 +29,7 @@ You need to install a code editor, such as [VSCode](https://code.visualstudio.co
 We host the code of our games on [GitHub](https://github.com/gamepark).
 
 You need to install [Git](https://git-scm.com/) to be able to check out the project and save you code.
+
+## Package and project manager
+
+You need to install [Yarn](https://yarnpkg.com/) to install the project dependencies, test your code, and deploy.

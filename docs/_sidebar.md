@@ -1,7 +1,7 @@
 - Getting started
   - [Technical prerequisites](technical-prerequisites.md)
   - [Game choice](game-choice.md)
-  - Project initialization
+  - [Project initialization](project-initialization.md)
   - Players identifiers
   - Game setup
   - Game start
