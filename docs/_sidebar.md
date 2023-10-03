@@ -1,5 +1,5 @@
 - Getting started
-  - Technical prerequisites
+  - [Technical prerequisites](technical-prerequisites.md)
   - Game choice
   - Project initialization
   - Players identifiers

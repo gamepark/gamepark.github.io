@@ -9,16 +9,6 @@ If you love board games, and you would like to adapt one online, you have come t
 We cannot host a board game on Game Park without an agreement with the publisher.
 So, if you want your work to get online, please contact us before you start! <contact@game-park.com>
 
-### Prerequisite
-
-All you need to know is [Typescript](https://www.typescriptlang.org/).
-:bulb: *You can find a lot of free resources online to learn this language.*
-
-You need to install a code editor, such as [VSCode](https://code.visualstudio.com/) or [Webstorm](https://www.jetbrains.com/fr-fr/webstorm/).
-
-You also need to install [Node.JS](https://nodejs.org/fr) to run the game on your computer,
-and [Git](https://git-scm.com/), to save your code on [Game Park Github repository](https://github.com/gamepark).
-
 ### Prepare the repository
 
 :warning: **We usually take care of this step for you.**
