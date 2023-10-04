@@ -10,5 +10,3 @@ Please get in touch with us to choose a game we can host and sign an agreement!
 As a developer, you can get 15% of the game revenues (based on active Game Park subscribers playing the game).
 
 Of course, you can code any game you like just for fun, but we will not be able to help nor host it when you are done.
-
-Most of this documentation will be based on the [Black Lady](https://en.wikipedia.org/wiki/Black_Lady) card game. Do not hesitate to make you own implementation for practice!

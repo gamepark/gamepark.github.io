@@ -35,6 +35,7 @@
 
 - The rules
     - Splitting the rules
+      - The Rules API
     - Player turn rules
     - Moves consequences
     - Simultaneous rules
@@ -50,6 +51,8 @@
     - Shuffling
     - Rolling dices
     - Throwing coins
+
+- Memory API
 
 - Animations
 
@@ -86,3 +89,4 @@
     - Solving the animations issue
     - The database
     - Real-time notifications
+    - Material approach
