@@ -4,8 +4,7 @@
     - [Project initialization](project-initialization.md)
     - [Players identifiers](players-identifiers.md)
     - [Game setup](game-setup.md)
-    - Game start
-    - Material display
+    - [Display the material](display-the-material.md)
     - Legal moves
 
 - The material

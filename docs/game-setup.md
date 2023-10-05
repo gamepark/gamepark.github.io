@@ -22,6 +22,8 @@ Then, you will start the first "rule", which is usually the first time a player 
 :bulb: [Static items](types-of-material.md#static-items) (items that do not move during the game, like a board) should not be included in the game state (to
 save storage space).
 
+:warning: Every time you change the setup, you must [start a new game](console-commands.md#new) to test the result.
+
 ## Rules with choices during the setup
 
 On Game Park, everything happening in the Game Setup is automatic.
@@ -141,29 +143,38 @@ Access to the [Memory API](memory-api.md), which allows to memorize, remind and 
 During the setup, you should only need to memorize, using the [memorize](#memorize) shorthand function.
 
 #### Arguments
+
 1. `player?: Player`: if you need to memorize different values for each player, you can pass the player here. Leave it empty for the global game memory.
 
 #### Returns
+
 A GameMemory or a PlayerMemory instance.
 
 ### memorize
+
 Shorthand access to `this.getMemory(...).memorize(...)`
 
 #### Arguments
+
 1. `key: keyof any`: the unique key where the value will be stored.
-2. `value: any`: value you need to store (it must be compatible with [JSON serialization](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)).
+2. `value: any`: value you need to store (it must be compatible
+   with [JSON serialization](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)).
 3. `player?: Player`: if you need to memorize different values for each player, you can pass the player here. Leave it empty for the global game memory.
 
 #### Returns
+
 `void`
 
 #### Example
+
 Memorize the current round:
+
 ```ts
 this.memorize(Memory.Round, 1)
 ```
 
 Initialize a score to 0 for each player:
+
 ```ts
 for (const player of this.players) {
   this.memorize(Memory.Score, 0, player)
