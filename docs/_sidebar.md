@@ -8,7 +8,7 @@
     - [The first legal moves](first-legal-moves.md)
 
 - The material
-    - Types of material
+    - [Types of material](types-of-material.md)
     - Material description
     - Cards, boards and tokens
     - Dices

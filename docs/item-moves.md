@@ -1,3 +1,5 @@
 TODO :)
 
+## Create
+## Delete
 ## Shuffle

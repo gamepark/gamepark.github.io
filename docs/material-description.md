@@ -1,1 +1,5 @@
 TODO :)
+
+### getStaticItems
+
+### stockLocation
