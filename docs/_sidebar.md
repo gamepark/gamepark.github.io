@@ -9,6 +9,7 @@
 
 - The material
     - Types of material
+    - Material description
     - Cards, boards and tokens
     - Dices
     - Paper & Pencils
@@ -55,8 +56,6 @@
 
 - Memory API
 
-- Animations
-
 - Game texts
     - Translations
     - Headers
@@ -67,6 +66,10 @@
     - Ranking
 
 - Player timers
+
+- Animations
+
+- Sounds
 
 - Undo a player action
 

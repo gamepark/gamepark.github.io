@@ -19,7 +19,7 @@ In this file, you will typically create the material (as you would put it out of
 
 Then, you will start the first "rule", which is usually the first time a player has to choose what to do.
 
-:bulb: [Static items](types-of-material.md#static-items) (items that do not move during the game, like a board) should not be included in the game state (to
+:bulb: [Static items](types-of-material.md#mobile-items-versus-static-items) (items that do not move during the game, like a board) should not be included in the game state (to
 save storage space).
 
 :warning: Every time you change the setup, you must [start a new game](console-commands.md#new) to test the result.
