@@ -5,7 +5,7 @@
     - [Players identifiers](players-identifiers.md)
     - [Game setup](game-setup.md)
     - [Display the material](display-the-material.md)
-    - Legal moves
+    - [The first legal moves](first-legal-moves.md)
 
 - The material
     - Types of material
@@ -16,6 +16,8 @@
 - The locations
     - Types of locations
     - Location data
+    - Item Locator API
+    - Location description
     - Locations strategies
     - Hand of cards
     - Deck of cards
