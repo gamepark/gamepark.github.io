@@ -18,7 +18,7 @@ As our framework takes care of nearly everything here, you do not need to learn 
 
 ## Javascript Runtime environment
 
-You need to install [Node.JS](https://nodejs.org/fr) to run the game on your computer.
+You need to install [Node.js](https://nodejs.org/fr) to run the game on your computer.
 
 ## Code editor
 

@@ -9,4 +9,4 @@
 - Accessible to beginners: Typescript is all you need to learn!
 
 [Discord](https://discord.gg/MaWUjfdYjT)
-[Get Started](#Game-Park-framework-documentation)
+[Get Started](#Get-Started)

@@ -26,7 +26,7 @@ Each game has **moves**. The moves are the choices players can make during the g
 
 In the first version of Game Park API, you had to design the state and the moves of each game from scratch. This was complex and time-consuming, so we improved the framework!
 
-We introduced the concepts of [Material & Locations](#Material-&-Locations). Now each game state has [the same Data structure](#Data-of-a-Material-Game) and [the same moves](#Moves-of-a-Material-Game).
+We introduced the concepts of [Material & Locations](#material--locations). Now each game state has [the same Data structure](#Data-of-a-Material-Game) and [the same moves](#Moves-of-a-Material-Game).
 
 ### Material & Locations
 

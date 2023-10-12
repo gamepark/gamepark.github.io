@@ -17,18 +17,11 @@ Sometimes how to split is straightforward, sometimes the best option can be subt
 
 Items are stored in the game state this way:
 
-```ts
+```
 items: {
-    [MaterialType.A]
-:
-    [{item1, item2, ...}],
-        [MaterialType.A]
-:
-    [{item1, item2, ...}],
-        [MaterialType.A]
-:
-    [{item1, item2, ...}]
-}
+  [MaterialType.A]: [{item1, item2, ...}],
+  [MaterialType.B]: [{item1, item2, ...}],
+  [MaterialType.C]: [{item1, item2, ...}],
 ```
 
 Having reasonable small arrays instead of 1 big array is better.
@@ -87,7 +80,7 @@ During the game, infinite resources should not move from a "stock" item with a v
 
 Instead, they should be [created](item-moves.md#create) and [deleted](item-moves.md#delete) all the time.
 
-By default, when a item is created (or deleted) during the game, the animation will simply fade-in or fade-out the item.
+By default, when an item is created (or deleted) during the game, the animation will simply fade-in or fade-out the item.
 
 To get a better experience, you should use a static item to display the stock,
 and refer it as the [stock location](material-description.md#stocklocation) to get animations starting and ending from

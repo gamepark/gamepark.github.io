@@ -2,10 +2,10 @@
 
 When a new game is started, the Game setup is called to prepare the **initial game state**.
 
-The GameSetup file can be found in `/rules/src/GameSetup.ts`.
+The GameTemplateSetup file can be found in `/rules/src/GameTemplateSetup.ts`.
 
 ```ts
-export class GameSetup extends MaterialGameSetup<PlayerColor, MaterialType, LocationType, GameOptions> {
+export class GameTemplateSetup extends MaterialGameSetup<PlayerColor, MaterialType, LocationType, GameOptions> {
   setupMaterial(_options: GameOptions) {
   }
 
@@ -19,7 +19,8 @@ In this file, you will typically create the material (as you would put it out of
 
 Then, you will start the first "rule", which is usually the first time a player has to choose what to do.
 
-:bulb: [Static items](types-of-material.md#mobile-items-versus-static-items) (items that do not move during the game, like a board) should not be included in the game state (to
+:bulb: [Static items](types-of-material.md#mobile-items-versus-static-items) (items that do not move during the game, like a board) should not be included in
+the game state (to
 save storage space).
 
 :warning: Every time you change the setup, you must [start a new game](console-commands.md#new) to test the result.
@@ -28,7 +29,8 @@ save storage space).
 
 On Game Park, everything happening in the Game Setup is automatic.
 
-Some game have choices that players make during the setup. You cannot implement that inside the GameSetup, because those choices are meaningful game actions
+Some game have choices that players make during the setup. You cannot implement that inside the GameTemplateSetup, because those choices are meaningful game
+actions
 that must be part of the game history.
 
 In this case, just setup as much as you can in the game setup, and create a first RuleId such as "RuleId.Setup".
@@ -204,14 +206,12 @@ The base function called by Game Park server.
 It has a default implementation that should work for every games following the [Material approach](material-approach.md):
 
 ```ts
-  setup(options
-:
-Options
-):
-MaterialGame < P, M, L > {
-  this.game = { players: getPlayerIds(options), items: {}, memory: {} }
-  this.setupMaterial(options)
-  this.game.rule = this.start(options)
-  return this.game
+class GameTemplateSetup {
+  setup(options: Options): MaterialGame<P, M, L> {
+    this.game = { players: getPlayerIds(options), items: {}, memory: {} }
+    this.setupMaterial(options)
+    this.game.rule = this.start(options)
+    return this.game
+  }
 }
 ```
