@@ -1,12 +1,12 @@
 ![logo](_media/logo.svg)
 
-# Game Park framework <small>6.8</small>
+# Game Park framework <small>6.29</small>
 
-> The best way to code a board game
+> Board games. Online. Fast.
 
-- Only care about the rules and the material
-- Do not waste time with technical stuff
-- Accessible to beginners: Typescript is all you need to learn!
+- Easily enforce the rules of the game
+- Create a great UI in no time
+- Beginners friendly: Typescript is all you need to learn!
 
 [Discord](https://discord.gg/MaWUjfdYjT)
 [Get Started](#Get-Started)
