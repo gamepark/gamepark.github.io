@@ -8,6 +8,7 @@ Open [Game Park Board Game Template](https://github.com/gamepark/board-game-temp
 
 Then, checkout the repository on your computer using Git, and using your code editor, search and replace in every file:
 * `Game Template` => `Name of your Game`
+* `GameTemplate` => `NameOfYourGame`
 * `game-template` => `name-of-your-game`
 
 :bulb: `name-of-your-game` is the unique identifier for the game on Game Park. We provide it.
