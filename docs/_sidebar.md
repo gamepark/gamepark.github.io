@@ -1,3 +1,7 @@
+- [Step-by-step example](step-by-step-example/step-by-step-example.md)
+  - Hello world
+- [Understand the architecture](understand-the-architecture/understand-the-architecture.md)
+  - Hello world
 - Getting started
     - [Technical prerequisites](technical-prerequisites.md)
     - [Game choice](game-choice.md)
