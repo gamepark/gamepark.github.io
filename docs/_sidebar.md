@@ -1,9 +1,10 @@
-- [Step-by-step example](step-by-step-example/step-by-step-example.md)
-  - Hello world
+- Step-by-step example
+  - [Choose a game](step-by-step-example/choose-a-game.md)
+  - [Set up your computer](step-by-step-example/set-up-your-computer.md)
 - [Understand the architecture](understand-the-architecture/understand-the-architecture.md)
   - Hello world
 - Getting started
-    - [Technical prerequisites](technical-prerequisites.md)
+    - [Technical prerequisites](step-by-step-example/technical-prerequisites.md)
     - [Game choice](game-choice.md)
     - [Project initialization](project-initialization.md)
     - [Players identifiers](players-identifiers.md)

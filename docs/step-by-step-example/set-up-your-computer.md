@@ -1,6 +1,8 @@
-# Technical prerequisite
+# Set up your computer
 
-## Programming language
+## What you need to know - or learn
+
+### Programming language
 
 We use [Typescript](https://www.typescriptlang.org/) to code the games.
 
@@ -10,26 +12,28 @@ It is perfectly possible to code a game on Game Park without any prior knowledge
 
 :bulb: If you are a new developer, you can take any quick online course about Javascript, then about Typescript, to be good to go!
 
-## Web app framework
+### Web app framework
 
 We use [React](https://react.dev/) to display the games.
 
-As our framework takes care of nearly everything here, you do not need to learn React to start coding a game.
+As our framework takes care of nearly everything here, **you do not need to learn React** to start coding a game.
 
-## Javascript Runtime environment
+## What you need to install
 
-You need to install [Node.js](https://nodejs.org/fr) to run the game on your computer.
+### NodeJS
 
-## Code editor
+You need to install [Node.js](https://nodejs.org/fr) to run Typescript/Javascript programs on your computer.
+
+### Any code editor
 
 You need to install a code editor, such as [VSCode](https://code.visualstudio.com/) or [Webstorm](https://www.jetbrains.com/fr-fr/webstorm/).
 
-## Code version control
+### Git: version control
 
 We host the code of our games on [GitHub](https://github.com/gamepark).
 
 You need to install [Git](https://git-scm.com/) to be able to check out the project and save you code.
 
-## Package and project manager
+### Yarn: package and project manager
 
 You need to install [Yarn](https://yarnpkg.com/) to install the project dependencies, test your code, and deploy.
