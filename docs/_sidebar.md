@@ -6,8 +6,11 @@
   - [Identify the material](step-by-step-example/identify-the-material.md)
   - [Identify the locations](step-by-step-example/identify-the-locations.md)
   - [Prepare the images](step-by-step-example/prepare-the-images.md)
-- [Understand the architecture](understand-the-architecture/understand-the-architecture.md)
+  - [Display a first item](step-by-step-example/display-first-item.md)
+
+- Concepts
   - Hello world
+
 - Getting started
     - [Technical prerequisites](step-by-step-example/technical-prerequisites.md)
     - [Game choice](game-choice.md)
