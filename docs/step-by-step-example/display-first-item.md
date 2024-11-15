@@ -25,6 +25,8 @@ The width and the height must be expressed in centimeters.
 
 We export a singleton instance of the class.
 
+:bulb: We offer `BoardDescription`, `CardDescription`
+
 ## Display a Static item
 
 The Material description is used to display **Material items**.
