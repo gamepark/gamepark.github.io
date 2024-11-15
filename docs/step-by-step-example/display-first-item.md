@@ -38,6 +38,8 @@ Inside the BoardDescription class, you can add a static item this way:
 staticItem = { location: { type: LocationType.MainBoardSpot } }
 ```
 
+The minimum required information on an item, is a location. And the minimum required information on a location is its type.
+
 Now, the image of your board will be displayed on the screen.
 
 In the [next step](step-by-step-example/create-items.md), you will see how to create and display dynamic items.

@@ -7,6 +7,7 @@
   - [Identify the locations](step-by-step-example/identify-the-locations.md)
   - [Prepare the images](step-by-step-example/prepare-the-images.md)
   - [Display a first item](step-by-step-example/display-first-item.md)
+  - [Create items](step-by-step-example/create-items.md)
 
 - Concepts
   - Hello world
