@@ -2,13 +2,14 @@
   - [Choose a game](step-by-step-example/choose-a-game.md)
   - [Set up your computer](step-by-step-example/set-up-your-computer.md)
   - [Set up the project](step-by-step-example/set-up-the-project.md)
+  - [Identify the players](step-by-step-example/identify-the-players.md)
 - [Understand the architecture](understand-the-architecture/understand-the-architecture.md)
   - Hello world
 - Getting started
     - [Technical prerequisites](step-by-step-example/technical-prerequisites.md)
     - [Game choice](game-choice.md)
     - [Project initialization](step-by-step-example/project-initialization.md)
-    - [Players identifiers](players-identifiers.md)
+    - [Players identifiers](step-by-step-example/players-identifiers.md)
     - [Game setup](game-setup.md)
     - [Display the material](display-the-material.md)
     - [The first legal moves](first-legal-moves.md)

@@ -193,7 +193,7 @@ You should not have to manipulate this property directly, but through the helper
 
 `{ players: [], items: {}, memory: {} }`
 
-`players` is filled with the [players identifiers](players-identifiers.md) inside the [setup function](#setup)
+`players` is filled with the [players identifiers](step-by-step-example/players-identifiers.md) inside the [setup function](#setup)
 
 ### players
 

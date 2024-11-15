@@ -1,4 +1,4 @@
-# Players identifiers
+# Identify the players
 
 The player id is the **unique number** that links a player in your game with the Game Park user.
 
@@ -15,14 +15,18 @@ export enum PlayerColor {
 
 :warning: You should rename the file and the Enum if your game has something else than a "color" to identify the players.
 
-You will also need to update the [Game Options](game-options.md).
+Example: in [Colt Super Express](https://github.com/gamepark/colt-super-express/blob/main/rules/src/Bandit.ts), players choose a "Bandit":
+
+<img width="300" src="./_media/choose-bandit.jpg"/>
+
+You will also need to update the [Game Options](../game-options.md).
 
 ## Games without any player identifier
 
 If your game does not provide any way to identify the players, you can:
 
 1. Replace any reference to `PlayerColor` in the code with the `number` type.
-2. Remove the PlayerOptions from the [Game Options](game-options.md).
+2. Remove the PlayerOptions from the [Game Options](../game-options.md).
 3. Delete `/rules/src/PlayerColor.ts`
 
 Game Park will automatically set a sequence of numbers (1, 2, 3, 4, ...) as the player ids.
