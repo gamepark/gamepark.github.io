@@ -5,6 +5,7 @@
   - [Identify the players](step-by-step-example/identify-the-players.md)
   - [Identify the material](step-by-step-example/identify-the-material.md)
   - [Identify the locations](step-by-step-example/identify-the-locations.md)
+  - [Prepare the images](step-by-step-example/prepare-the-images.md)
 - [Understand the architecture](understand-the-architecture/understand-the-architecture.md)
   - Hello world
 - Getting started
