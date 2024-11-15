@@ -4,6 +4,7 @@
   - [Set up the project](step-by-step-example/set-up-the-project.md)
   - [Identify the players](step-by-step-example/identify-the-players.md)
   - [Identify the material](step-by-step-example/identify-the-material.md)
+  - [Identify the locations](step-by-step-example/identify-the-locations.md)
 - [Understand the architecture](understand-the-architecture/understand-the-architecture.md)
   - Hello world
 - Getting started
