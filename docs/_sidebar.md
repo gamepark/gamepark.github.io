@@ -10,6 +10,7 @@
   - [Create items](step-by-step-example/create-items.md)
   - [Place items](step-by-step-example/place-items.md)
   - [Items ID](step-by-step-example/items-id.md)
+  - [Organize the Table](step-by-step-example/organize-the-table.md)
 
 - Concepts
   - Hello world
