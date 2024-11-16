@@ -1,5 +1,0 @@
-TODO :)
-
-## Create
-## Delete
-## Shuffle

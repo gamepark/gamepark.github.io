@@ -17,12 +17,7 @@
   - Hello world
 
 - Getting started
-    - [Technical prerequisites](step-by-step-example/technical-prerequisites.md)
-    - [Game choice](game-choice.md)
-    - [Project initialization](step-by-step-example/project-initialization.md)
-    - [Players identifiers](step-by-step-example/players-identifiers.md)
     - [Game setup](game-setup.md)
-    - [Display the material](display-the-material.md)
     - [The first legal moves](first-legal-moves.md)
 
 - The material
