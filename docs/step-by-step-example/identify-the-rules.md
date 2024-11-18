@@ -18,6 +18,8 @@ export class ColtSuperExpressRules {
 }
 ```
 
+:bulb: By convention, the rules classes are name after the RuleId + "Rule" suffix.
+
 Inside the game state, the current rule is always stored:
 ```
 {
