@@ -11,6 +11,7 @@
   - [Place items](step-by-step-example/place-items.md)
   - [Items ID](step-by-step-example/items-id.md)
   - [Organize the Table](step-by-step-example/organize-the-table.md)
+  - [Hide the cards](step-by-step-example/hide-the-cards.md)
   - [Complete the Setup](step-by-step-example/complete-the-setup.md)
 
 - Concepts
