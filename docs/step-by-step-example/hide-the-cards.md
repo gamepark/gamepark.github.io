@@ -1,5 +1,7 @@
 # Hide the cards
 
+We offer a very convenient API to hide cards or other items from the players and spectators.
+
 ## Hidden or Secret
 
 You must determine if your game has hidden or secret information.
