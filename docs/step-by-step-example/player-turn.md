@@ -2,6 +2,16 @@
 
 ## Start a player turn
 
+The first kind of rule you might need, the most common one, is a player turn:
+
+```typescript
+export class ExampleRule extends PlayerTurnRule {
+  
+}
+```
+
+In a player rule, we expect to have, in the game state, `this.game.rule.player` equal to the active player. `this.player` is a shortcut for that.
+
 To change the current rule, you need a "Rule move", which you can create this way:
 
 ```typescript
@@ -19,16 +29,6 @@ this.startRule(RuleId.TheNewRule)
 If you use `startPlayerTurn` instead of `startRule` inside the same player's turn, the undo feature will not be available.
 
 ## The legal moves
-
-The first kind of rule you might need, the most common one, is a player turn:
-
-```typescript
-export class ExampleRule extends PlayerTurnRule {
-  
-}
-```
-
-In a player rule, we expect to have, in the game state, `this.game.rule.player` equal to the active player. `this.player` is a shortcut for that.
 
 If the player has to choose what to do, you have to implement `getPlayerMoves`:
 
