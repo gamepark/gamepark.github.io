@@ -15,6 +15,7 @@
   - [Complete the Setup](step-by-step-example/complete-the-setup.md)
   - [Identify the rules](step-by-step-example/identify-the-rules.md)
   - [Player turn](step-by-step-example/player-turn.md)
+  - [Simultaneous rules](step-by-step-example/simultaneous-rules.md)
 
 - Concepts
   - Hello world
