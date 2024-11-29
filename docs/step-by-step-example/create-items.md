@@ -2,12 +2,12 @@
 
 ## The game setup
 
-[The game setup](https://github.com/gamepark/colt-super-express/blob/main/rules/src/ColtSuperExpressSetup.ts) is the file in which you prepare the initial state of the game, before any player takes a decision.
+[The game setup](https://github.com/gamepark/board-game-template/blob/main/rules/src/GameTemplateSetup.ts) is the file in which you prepare the initial state of the game, before any player takes a decision.
 
 Here is how you can create an item in the setup:
 
 ```typescript
-export class ColtSuperExpressSetup extends MaterialGameSetup {
+export class ExampleGameSetup extends MaterialGameSetup {
   setupMaterial() {
     this.material(MaterialType.SomeStuff).createItem({ location: { type: LocationType.SomeSpace } })
   }
@@ -19,7 +19,7 @@ export class ColtSuperExpressSetup extends MaterialGameSetup {
 ## Start a new game
 
 :warning: Everytime you change the setup, you will only see the difference after starting a new game.
-The game state is store into your browser's locale storage.
+The game state is stored into your browser's locale storage.
 
 If you open your browser console and write `game.state`, you will see the game state:
 ```

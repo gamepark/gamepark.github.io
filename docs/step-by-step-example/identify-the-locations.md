@@ -2,7 +2,7 @@
 
 The material is located around the table according to the rules.
 
-The types of locations are listed in [/rules/src/material/LocationType.ts](https://github.com/gamepark/colt-super-express/blob/main/rules/src/material/LocationType.ts)
+The types of locations are listed in [/rules/src/material/LocationType.ts](https://github.com/gamepark/board-game-template/blob/main/rules/src/material/LocationType.ts)
 
 Again, we follow the terms from the rules as much as we can.
 

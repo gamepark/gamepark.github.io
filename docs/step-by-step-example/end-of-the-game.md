@@ -2,7 +2,7 @@
 
 ## Triggering the end
 
-When a condition is met to end the game, you need to return this move as a consequence:
+When a condition is met to end the game, you need to return a `endGame` move as a consequence:
 
 ```typescript
 export class SomeRule extends PlayerTurnRule {

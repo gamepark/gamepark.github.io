@@ -6,7 +6,7 @@ The static and dynamic items created are displayed by default in the middle of t
 
 The Table is a coordinates system, in centimeters, that we use to position the items on the screen.
 
-To change the position of an item, we need to add a locator for its location type in the [Locators file](https://github.com/gamepark/colt-super-express/blob/main/app/src/locators/Locators.tsx):
+To change the position of an item, we need to add a locator for its location type in the [Locators file](https://github.com/gamepark/board-game-template/blob/main/app/src/locators/Locators.ts):
 
 ```typescript
 import { Locator } from '@gamepark/react-game'

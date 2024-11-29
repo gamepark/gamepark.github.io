@@ -45,5 +45,5 @@ export class ColtSuperExpressSetup extends MaterialGameSetup {
 }
 ```
 
-:bulb: If you start a rule that has automatic moves, they will be play automatically as a part of the setup too.
+:bulb: If you start a rule that has automatic moves, they will be played automatically as a part of the setup too.
 

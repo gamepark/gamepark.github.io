@@ -19,10 +19,7 @@ The rules of the game (in English if available) must be your bible to name every
 
 **Stay as close as possible with the terms used in the rules.**
 
-## The example: Colt Super Express
+## The examples
 
-We will showcase the framework using the implementation of Colt Super Express.
-
-<img width="300" src="./_media/colt-super-express.webp"/>
-
-Colt Super Express is a simple game, and a very good example for most features that we frequently need to adapt other games.
+A lot of open source examples are available on Game Park's GitHub: https://github.com/gamepark
+(older games may not be public because they are implemented with an older version of the framework)

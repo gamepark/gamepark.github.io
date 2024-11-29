@@ -2,14 +2,27 @@
 
 A board game is all about Boards, Cards, Tokens... moving around the table.
 
-The types of material are listed in [/rules/src/material/MaterialType.ts](https://github.com/gamepark/colt-super-express/blob/main/rules/src/material/MaterialType.ts)
+The types of material are listed in [/rules/src/material/MaterialType.ts](https://github.com/gamepark/board-game-template/blob/main/rules/src/material/MaterialType.ts)
 
-We follow the terms from the rules:
+We follow the terms from the rules as much as possible.
 
-<img width="815" src="./_media/material-types-1.jpg"/>
+Here is an example from [Architects of Amytis](https://github.com/gamepark/architects-of-amytis):
 
-<img width="282" src="./_media/material-types-2.jpg"/>
+<img width="800" src="./_media/architects-amytis-material-1.jpg" style="display: block"/>
 
-In Colt Super Express, we choose to group the "Locomotive card" and the "Train car card" into a single type: "Train card".
+<img width="800" src="./_media/architects-amytis-material-2.jpg"/>
 
-The reason is that those cards share the same location (the train line), so it is simpler to use the same material type here.
+```typescript
+export enum MaterialType {
+  MainBoard = 1,
+  FavorBoard,
+  ScoreBoard,
+  PlayerBoard,
+  Architect,
+  Pawn,
+  FirstPlayerCard,
+  BuildingCard,
+  ProjectCard,
+  BuildingTile
+}
+```

@@ -18,7 +18,7 @@ Therefore, **the layout of the game must be organized to fit in a landscape rect
 
 :warning: Everything outside the white rectangle can be truncated for some users, so do not use that space!
 
-You can change the table size in [GameDisplay.tsx](https://github.com/gamepark/colt-super-express/blob/main/app/src/GameDisplay.tsx):
+You can change the table size in [GameDisplay.tsx](https://github.com/gamepark/board-game-template/blob/main/app/src/GameDisplay.tsx):
 
 ```typescript jsx
 <GameTable xMin={-50} xMax={50} yMin={-30} yMax={30}/>
@@ -32,10 +32,17 @@ However, the bigger the table is, the smaller the components will be without zoo
 
 ## Player panels
 
-Players panels indicates the player name, avatar and timer. It can be used to display more data, such as a score.
+Players panels indicates the player name, avatar and timer. It can be used to [display more data](TODO), such as a score.
 
 <img width="300" src="./_media/player-panel.jpg"/>
 
 **Player panels are fixed**: they are not inside the table, so they will stay at the same position when you zoom in, etc.
 
-However, player panels can be positioned anywhere on the screen, and it is advised to place the material owned by players close to their panels
+However, player panels can be positioned anywhere on the screen, and it is advised to place the material owned by players close to their panels.
+
+In [GameDisplay.tsx](https://github.com/gamepark/board-game-template/blob/main/app/src/GameDisplay.tsx), you can add margins if you want to prevent panels from covering the table area:
+```typescript jsx
+<GameTable xMin={-50} xMax={50} yMin={-30} yMax={30}
+           margin={{ top: 7, left: 0, right: 30, bottom: 0 }}/>
+```
+However, do not be afraid of removing the margin, and simplify keep some empty space in the table area spots that the panels might cover.

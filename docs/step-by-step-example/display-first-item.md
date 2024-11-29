@@ -2,7 +2,7 @@
 
 ## The Material Description
 
-The description for each type of material must be listed in the [Material file](https://github.com/gamepark/colt-super-express/blob/main/app/src/material/Material.tsx)
+The description for each type of material must be listed in the [Material file](https://github.com/gamepark/board-game-template/blob/main/app/src/material/Material.ts)
 
 Create a new file to describe your item. Here is a simple example:
 
@@ -25,7 +25,7 @@ The width and the height must be expressed in centimeters.
 
 We export a singleton instance of the class.
 
-:bulb: We offer `BoardDescription`, `CardDescription`
+:bulb: you can extend `BoardDescription`, `CardDescription`, `TokenDescription` or `CubicDiceDescription` from the framework
 
 ## Display a Static item
 
@@ -47,5 +47,3 @@ Now, the image of your board will be displayed on the screen.
 In the [next step](step-by-step-example/create-items.md), you will see how to create and display dynamic items.
 
 :bulb: You could use only dynamic items to show any item in the game. However, it would use more space in the database, more bandwidth and more memory to display.
-
-:bulb: In Colt Super Express, we did not use any static item. The Locomotive card could be a static item, however in this case it would require a lot more work in the rules to move the bandit figure in and out the locomotive.
