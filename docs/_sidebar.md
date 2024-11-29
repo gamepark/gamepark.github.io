@@ -17,3 +17,6 @@
   - [Player turn](step-by-step-example/player-turn.md)
   - [Simultaneous rules](step-by-step-example/simultaneous-rules.md)
   - [End of the game](step-by-step-example/end-of-the-game.md)
+
+- Features
+  - [Infinite stock](features/infinite-stock.md)
