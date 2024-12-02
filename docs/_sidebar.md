@@ -21,4 +21,5 @@
   - [Help dialogs](step-by-step-example/help-dialog.md)
 
 - Features
+  - [Console commands](features/console-commands.md)
   - [Infinite stock](features/infinite-stock.md)

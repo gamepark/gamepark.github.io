@@ -32,6 +32,8 @@ When you run `game.new()` in the browser console, you start a new game, however 
 
 If you put `console.log` instructions in the Setup, you need to check the "preserve logs" options in the console.
 
+:bulb: We provide a few useful [console commands](features/console-commands.md)!
+
 ## The first rule
 
 Finally, when the setup is done, and you have a satisfying layout for the game, you can start the first rule at the end of the setup:
