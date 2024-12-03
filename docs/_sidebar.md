@@ -25,3 +25,6 @@
   - [Console commands](features/console-commands.md)
   - [Infinite stock](features/infinite-stock.md)
   - [Expanding areas](features/expanding-areas.md)
+
+- Troubleshooting
+  - [Shuffling](troubleshooting/shuffling.md)
