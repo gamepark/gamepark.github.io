@@ -44,7 +44,7 @@ In this example, on card of each color is created in the game state:
 :warning: The item id is not a unique identifier for the item: if you have 2 cards that look exactly the same in the game, they have the same id. We use the item's index (in the game state) to identify it uniquely.
 
 For more complex use cases, have a look at:
-- [Hiding only one side of a card](TODO)
+- [Hiding only one side of a card](features/cards-with-different-backs.md)
 - [Pro tips for composite IDs](TODO)
 
 ## Images based on ids

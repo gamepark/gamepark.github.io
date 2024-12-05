@@ -51,6 +51,6 @@ You will generally only need the hiding strategies available in the framework:
 * `hideItemId` for HiddenMaterialRules and SecretMaterialRules
 * `hideItemIdToOthers` only for SecretMaterialRules
 
-:bulb: `hideFront` and `hideFrontToOthers` are also available if you need to [hide only one side of a card](TODO)
+:bulb: `hideFront` and `hideFrontToOthers` are also available if you need to [hide only one side of a card](features/cards-with-different-backs.md)
 
 :confetti_ball: Once you have set the hiding strategies, **everything happen automatically**: you do not need to care about what to hide or reveal to players or spectators anywhere else in the code.

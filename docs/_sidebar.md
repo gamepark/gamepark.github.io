@@ -25,6 +25,7 @@
   - [Console commands](features/console-commands.md)
   - [Game options](features/game-options.md)
   - [Infinite stock](features/infinite-stock.md)
+  - [Cards with different backs](features/cards-with-different-backs.md)
   - [Expanding areas](features/expanding-areas.md)
 
 - Troubleshooting
