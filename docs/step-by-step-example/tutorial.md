@@ -44,7 +44,7 @@ Increasing the tutorial version forces all those states do be erased (tutorial a
 
 ## Tutorial game options
 
-The [game options](TODO) that will be passed to the tutorial setup.
+The [game options](features/game-options.md) that will be passed to the tutorial setup.
 
 ## Tutorial setup
 

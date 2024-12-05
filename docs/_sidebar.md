@@ -23,6 +23,7 @@
 
 - Features
   - [Console commands](features/console-commands.md)
+  - [Game options](features/game-options.md)
   - [Infinite stock](features/infinite-stock.md)
   - [Expanding areas](features/expanding-areas.md)
 

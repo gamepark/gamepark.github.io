@@ -8,7 +8,7 @@ In the console of you browser, in development mode, we provide a few commands to
 
 - Start a new game with 2 players: `game.new()`
 - Start a new game with 4 players: `game.new(4)`
-- Start a new game with custom [game options](TODO): `game.new({ players: [{id: 1}, {id: 3}], expansion: true })`
+- Start a new game with custom [game options](features/game-options.md): `game.new({ players: [{id: 1}, {id: 3}], expansion: true })`
 
 ## Change active player
 
