@@ -28,5 +28,8 @@
   - [Cards with different backs](features/cards-with-different-backs.md)
   - [Expanding areas](features/expanding-areas.md)
 
+- Tips
+  - [Design item ids](tips/design-item-ids.md)
+
 - Troubleshooting
   - [Shuffling](troubleshooting/shuffling.md)
