@@ -19,7 +19,7 @@ Example: in [Colt Super Express](https://github.com/gamepark/colt-super-express/
 
 <img width="300" src="./_media/choose-bandit.jpg"/>
 
-You will also need to update the [Game Options](../game-options.md).
+You will also need to update the [Game Options](features/game-options.md?id=players-identifiers).
 
 ## Games without any player identifier
 
