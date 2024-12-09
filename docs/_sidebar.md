@@ -18,7 +18,7 @@
   - [Simultaneous rules](step-by-step-example/simultaneous-rules.md)
   - [End of the game](step-by-step-example/end-of-the-game.md)
   - [Write the headers](step-by-step-example/write-the-headers.md)
-  - [Help dialogs](step-by-step-example/help-dialog.md)
+  - [Help dialogs](step-by-step-example/help-dialogs.md)
   - [Tutorial](step-by-step-example/tutorial.md)
   - [Checklist](step-by-step-example/checklist.md)
 

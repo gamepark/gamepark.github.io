@@ -45,7 +45,7 @@ In this example, on card of each color is created in the game state:
 
 For more complex use cases, have a look at:
 - [Hiding only one side of a card](features/cards-with-different-backs.md)
-- [Pro tips for composite IDs](TODO)
+- [Pro tips for composite IDs](/tips/design-item-ids)
 
 ## Images based on ids
 

@@ -66,7 +66,7 @@ export class GameTemplateRules {
 }
 ```
 
-The responsibility for a location strategy is to maintain the consistency of the properties `x`, `y`, `z` of items sharing the same **location area**. Items share the same location area when they have the same location `type`, `id`, `player` and `parent`:
+The responsibility for a location strategy is to maintain the consistency of the properties `x`, `y`, `z` of items sharing the same [**location area**](TODO). Items share the same location area when they have the same location `type`, `id`, `player` and `parent`:
 * `location.type` is the mandatory LocationType
 * `location.player` is the optional owner player
 * `location.parent` is the optional parent item (example: a token on a card)
