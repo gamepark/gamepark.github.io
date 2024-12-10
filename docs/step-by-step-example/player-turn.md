@@ -45,7 +45,7 @@ export class ExampleRule extends PlayerTurnRule {
 
 Using the Material API, you have to return every move that the player could actually do at this step of the game.
 
-:bulb: Most of the time, the moves will be movements of material items, but it can also be [Rules moves](features/rule-moves.md) or [Custom moves](TODO).
+:bulb: Most of the time, the moves will be movements of material items, but it can also be [Rules moves](features/rule-moves.md) or [Custom moves](features/custom-moves.md).
 
 ## Move consequences
 
