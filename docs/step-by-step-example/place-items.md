@@ -41,7 +41,7 @@ class MainBoardSpotLocator extends Locator {
 `location.x` is an optional field on the Location object. [More about Location objects](TODO).
 
 Depending on what you want to do, we have a lot of Locators feature built in the framework:
-* You can [display items on other items](TODO)
+* You can [display items on other items](features/parent-items.md)
 * Use the [ListLocator](TODO) to display a list of items
 * Use the [HandLocator](TODO) to display items in a fan shape
 * Use the [FlexLocator](TODO) inspired from the CSS flexbox
