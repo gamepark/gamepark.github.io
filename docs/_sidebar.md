@@ -25,6 +25,7 @@
 - Features
   - [Console commands](features/console-commands.md)
   - [Game options](features/game-options.md)
+  - [Rule moves](features/rule-moves.md)
   - [Infinite stock](features/infinite-stock.md)
   - [Cards with different backs](features/cards-with-different-backs.md)
   - [Expanding areas](features/expanding-areas.md)
