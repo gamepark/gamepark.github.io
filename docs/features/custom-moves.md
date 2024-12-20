@@ -2,7 +2,7 @@
 
 ## Data structure
 
-Sometimes, [Material moves](TODO) and [Rule moves](features/rule-moves.md) are not enough. Custom moves allows to create any type of move that you need.
+Sometimes, [Item moves](features/item-moves.md) and [Rule moves](features/rule-moves.md) are not enough. Custom moves allows to create any type of move that you need.
 
 The data structure of custom move is free:
 ```typescript

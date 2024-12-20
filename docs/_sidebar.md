@@ -25,6 +25,7 @@
 - Features
   - [Console commands](features/console-commands.md)
   - [Game options](features/game-options.md)
+  - [Item moves](features/item-moves.md)
   - [Rule moves](features/rule-moves.md)
   - [Custom moves](features/custom-moves.md)
   - [Parent items](features/parent-items.md)
