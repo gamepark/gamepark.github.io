@@ -38,3 +38,4 @@
 
 - Troubleshooting
   - [Shuffling](troubleshooting/shuffling.md)
+  - [Conditional consequences](troubleshooting/conditional-consequences.md)
