@@ -33,6 +33,9 @@
   - [Cards with different backs](features/cards-with-different-backs.md)
   - [Expanding areas](features/expanding-areas.md)
 
+- Concepts
+  - [Location area](concepts/location-area.md)
+
 - Tips
   - [Design item ids](tips/design-item-ids.md)
 

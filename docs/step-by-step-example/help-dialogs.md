@@ -107,7 +107,7 @@ Help dialogs can have navigation arrows:
 
 <img width="600" src="./_media/help-arrows.jpg"/>
 
-By default, the navigation arrow with allow to navigate between all the items inside the same [**location area**](TODO). The default sorting with iterate though z, then y, then x.
+By default, the navigation arrow with allow to navigate between all the items inside the same [**location area**](concepts/location-area.md). The default sorting with iterate though z, then y, then x.
 
 You can override the default behavior like in [Boreal](https://github.com/gamepark/boreal/blob/main/app/src/locators/BoardCardLocator.ts#L22).
 
