@@ -34,6 +34,7 @@
   - [Expanding areas](features/expanding-areas.md)
 
 - Concepts
+  - [Core concepts](concepts/core-concepts.md)
   - [Location area](concepts/location-area.md)
 
 - Tips

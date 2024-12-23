@@ -10,7 +10,7 @@ If you love board games, and you would like to adapt one online, you have come t
 
 - We only publish games if we have the licence agreement: please get in touch with us on our [Discord dev server](https://discord.gg/MaWUjfdYjT) before you start coding!
 - To learn how we adapt a game, go to the **[Step-by-step example](step-by-step-example/choose-a-game.md)**
-- To understand how it works, go to the **[Concepts](concepts/TODO.md)**
+- To understand how it works, go to the **[Concepts](concepts/core-concepts.md)**
 
 ## Community
 
