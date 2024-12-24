@@ -75,4 +75,4 @@ export class ExampleRule extends PlayerTurnRule {
 
 Alongside `afterItemMove`, you can also use `onRuleStart`, `beforeItemMove` and `onCustomMove` to create consequences.
 
-[Learn more about Consequences](TODO)
+[Learn more about Consequences](concepts/consequences.md)

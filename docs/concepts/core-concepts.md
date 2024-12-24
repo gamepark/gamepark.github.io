@@ -34,22 +34,6 @@ Saving all the moves played has major benefits:
 
 It also introduces a challenge: random outputs must be reproducible. We could use a [Random seed](https://en.wikipedia.org/wiki/Random_seed), however Javascript default random number generator does not enforce that. So we instead choose to save the random outputs inside the moves after they are generated.
 
-### Automatic moves
-
-We could implement the rules of a board game without taking care of the user interface. Players play moves, it produces a new game state, until the game is over.
-
-However, in a board game, there are very often some things that the players must do without any choice. Like, paying gold after choosing a card to buy, refilling a river of cards, shuffling a deck, etc.
-
-If the user interface does not know what happens in which order after a player's decision, we cannot animate what is happening step-by-step.
-
-We could reimplement the rules for the front-end, but it would be a huge waste of time.
-
-For that reason, when we implement the rules of a game, we never update the state directly aside from the move that explicitly happened: instead we return **consequences**.
-
-Each consequence is a new event (we call them "moves"), that will be played automatically.
-
-The server never waits and apply all the automatic consequences immediately, however the client will apply the consequences step-by-step, producing an animation each time it is required.
-
 ## Implement board games fast
 
 The first version of the Game Park framework relied on the principles exposed above, and it works just fine.
