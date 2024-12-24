@@ -42,6 +42,7 @@
 
 - Tips
   - [Design item ids](tips/design-item-ids.md)
+  - [Put a card under a deck](tips/put-under-deck.md)
 
 - Troubleshooting
   - [Shuffling](troubleshooting/shuffling.md)
