@@ -7,6 +7,6 @@
 - location id
 
 The location area concept is used:
-- For [Location Strategies](TODO) (strategies apply to the items that share the same location area).
+- For [Location Strategies](features/location-strategies.md) (strategies apply to the items that share the same location area).
 - For [Navigation arrows](TODO) inside the material help dialogs.
 - For displaying the proper quantity on tooltip inside [MoneyDescription](TODO).

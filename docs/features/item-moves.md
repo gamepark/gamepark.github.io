@@ -12,7 +12,7 @@ material.createItems(items)
 - Each item is a Material Item.
 - createItem returns a single move, createItems return one move per item.
 - Items are created in the order of the array.
-- Each created item will apply the [location strategy](TODO) matching its location type if any (addItem).
+- Each created item will apply the [location strategy](features/location-strategies.md) matching its location type if any (addItem).
 - If an item is created at the exact same location as another existing item, they will [merge](TODO) if possible.
 - If you need to create a lot of items at the same time during the game (not in the setup), use `material.createItemsAtOnce(items)` to create them in a single move.
 
@@ -30,7 +30,7 @@ material.moveItems(item => location)
 - `moveItem` only moves the first item in the material instance filter, and returns a single move. It throws an error if there are no item in the filter.
 - `moveItems` moves all the filtered items, and returns an array of moves. Empty filter produces empty array.
 - You can use `moveItemsAtOnce` to move all the filtered items in a single move. Useful when moving a lot of items to prevent having too many moves or useless animations.
-- The [location strategy](TODO) is applied to all item that moves (removeItem, moveItem or addItem).
+- The [location strategy](features/location-strategies.md) is applied to all item that moves (removeItem, moveItem or addItem).
 
 ## Delete items
 
@@ -43,7 +43,7 @@ material.deleteItems()
 - Deleting items removes them entirely from the game state. If you pass a quantity, the quantity is subtracted from the item.
 - `deleteItem` only deletes the first filtered items, and returns a single move. It returns an error if there is no filtered item.
 - `deleteItems` deletes all the filtered items and returns an array of moves. Empty filter produces empty array.
-- The [location strategy](TODO) is applied to all item that are deleted (removeItem).
+- The [location strategy](features/location-strategies.md) is applied to all item that are deleted (removeItem).
 
 ## Shuffle
 

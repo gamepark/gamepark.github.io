@@ -80,3 +80,5 @@ The `PositiveSequenceStrategy` will make sure item starts with x = 0 to x = n-1 
 The `FillGapStrategy` is similar to the `PositiveSequenceStrategy`, except that when an item is remove, the gap is not filled, until another item is added.
 
 :confetti_ball: With the location strategies, no need to take care of x, y and z anymore when moving most items! You can even create custom location strategies for specific game rules.
+
+[Learn move about location strategies](features/location-strategies.md)
