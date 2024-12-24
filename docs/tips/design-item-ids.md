@@ -11,7 +11,7 @@ export type CardId = {
 }
 ```
 
-Using an object here is mandatory because the [Hiding Strategy API](TODO) can only hide paths inside the item.
+Using an object here is mandatory because the [Hiding Strategy API](features/custom-hiding-strategies.md) can only hide paths inside the item.
 
 :warning: **If you do not need to partially hide the item id, then you should use a number.**
 

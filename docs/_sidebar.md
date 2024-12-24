@@ -29,6 +29,7 @@
   - [Rule moves](features/rule-moves.md)
   - [Custom moves](features/custom-moves.md)
   - [Parent items](features/parent-items.md)
+  - [Hiding strategies](features/custom-hiding-strategies.md)
   - [Infinite stock](features/infinite-stock.md)
   - [Cards with different backs](features/cards-with-different-backs.md)
   - [Expanding areas](features/expanding-areas.md)
