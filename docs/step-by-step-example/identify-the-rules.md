@@ -35,7 +35,7 @@ No rule in the game state means the game is over.
 
 Depending on the game, it can be simple, or more tricky, to choose the best way to split the rules.
 
-The Rule id is also used to display [the header](TODO) in the game, on top of the screen: a short message to inform "who does what". Therefore, it is convenient to have 1 rule for each different header you want to show during the game.
+The Rule id is also used to display [the header](step-by-step-example/write-the-headers.md) in the game, on top of the screen: a short message to inform "who does what". Therefore, it is convenient to have 1 rule for each different header you want to show during the game.
 
 Sometime, you might not want to split one rule because the 2 rules share a lot of common code. However, it is very easy to share the code by inheritance (`RuleA extends RuleB`) or composition, using a third file for common features.
 
