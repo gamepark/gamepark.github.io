@@ -13,7 +13,7 @@ material.createItems(items)
 - createItem returns a single move, createItems return one move per item.
 - Items are created in the order of the array.
 - Each created item will apply the [location strategy](features/location-strategies.md) matching its location type if any (addItem).
-- If an item is created at the exact same location as another existing item, they will [merge](TODO) if possible.
+- If an item is created at the exact same location as another existing item, they will [merge](features/items-with-quantity.md#merging-items) if possible.
 - If you need to create a lot of items at the same time during the game (not in the setup), use `material.createItemsAtOnce(items)` to create them in a single move.
 
 ## Move items
