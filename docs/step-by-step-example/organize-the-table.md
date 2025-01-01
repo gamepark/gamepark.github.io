@@ -32,7 +32,7 @@ However, the bigger the table is, the smaller the components will be without zoo
 
 ## Player panels
 
-Players panels indicates the player name, avatar and timer. It can be used to [display more data](TODO), such as a score.
+Players panels indicates the player name, avatar and timer. It can be used to display more data, such as a score.
 
 <img width="300" src="./_media/player-panel.jpg"/>
 
@@ -45,4 +45,16 @@ In [GameDisplay.tsx](https://github.com/gamepark/board-game-template/blob/main/a
 <GameTable xMin={-50} xMax={50} yMin={-30} yMax={30}
            margin={{ top: 7, left: 0, right: 30, bottom: 0 }}/>
 ```
-However, do not be afraid of removing the margin, and simplify keep some empty space in the table area spots that the panels might cover.
+Do not be afraid of removing the margin, and simplify keep some empty space in the table area spots that the panels might cover.
+
+To add more data inside the player panels, fill-in the counters property. Here is an example from [Architects of Amytis](https://github.com/gamepark/architects-of-amytis/blob/main/app/src/panels/ArchitectsOfAmytisPlayerPanel.tsx#L22):
+
+```typescript jsx
+  const counters: CounterProps[] = [{
+    image: pawnDescription.images[player.id as PlayerColor],
+    value: rules.remind(Memory.Score, player.id)
+  }]
+  return <StyledPlayerPanel counters={counters}/>
+```
+
+Each counter consist in an image and a value.
