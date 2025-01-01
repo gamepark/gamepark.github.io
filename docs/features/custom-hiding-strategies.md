@@ -47,4 +47,4 @@ function hideIdToOthersWhenRotated(item: MaterialItem, player: number) {
 }
 ```
 
-For a deeper understanding of how the hiding strategies works, have a look at the [Hiding data concepts](TODO).
+For a deeper understanding of how the hiding strategies works, have a look at the [Hiding data concepts](concepts/hiding-data.md).

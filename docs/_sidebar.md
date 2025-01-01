@@ -39,6 +39,7 @@
 - Concepts
   - [Core concepts](concepts/core-concepts.md)
   - [Move and consequences](concepts/consequences.md)
+  - [Hiding data](concepts/hiding-data.md)
   - [Location area](concepts/location-area.md)
 
 - Tips
