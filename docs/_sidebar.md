@@ -34,6 +34,7 @@
   - [Items with quantity](features/items-with-quantity.md)
   - [Infinite stock](features/infinite-stock.md)
   - [Cards with different backs](features/cards-with-different-backs.md)
+  - [Translate images](features/translate-images.md)
   - [Expanding areas](features/expanding-areas.md)
   - [Tutorial AI](features/tutorial-ai.md)
 

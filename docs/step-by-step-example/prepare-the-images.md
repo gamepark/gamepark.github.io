@@ -35,4 +35,4 @@ For items with many images in their type, the name can be the same as the [futur
 
 Texts of images cannot be translated. We could use images with the text removed, and add the translated texts later using code, but it requires a lot of work and the result is never perfect.
 
-Therefore, we use images with the texts, and if the images are available in multiple language with use the [Material internationalization feature](TODO).
+Therefore, we use images with the texts, and if the images are available in multiple language we use the [Material internationalization feature](features/translate-images.md).
