@@ -57,6 +57,17 @@ export const ChooseBuildingTileHeader = () => {
 
 :bulb: `useRules`, `usePlayerId` and `usePlayerName` are custom [React hooks](https://react.dev/learn/reusing-logic-with-custom-hooks) available in the Game Park framework.
 
-Sometimes, you need to have [custom moves and buttons in the header to play those moves](TODO).
+Sometimes, you need to have buttons in you headers, for example to play [custom moves](features/custom-moves.md):
+
+```typescript jsx
+export const PlayerTurnHeader = () => {
+  const pass = useLegalMove(isCustomMoveType(CustomMoveType.Pass))
+  return (
+    <Trans defaults="header.turn.me" components={{
+      pass: <PlayMoveButton move={pass}/>
+    }}/>
+  )
+}
+```
 
 Finally, headers for simultaneous game phases, like the [ExplorationHeader](https://github.com/gamepark/faraway/blob/main/app/src/headers/ExplorationHeader.tsx) from Faraway are more complex as they need to cover at least 3 cases.
