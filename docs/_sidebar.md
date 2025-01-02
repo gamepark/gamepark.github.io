@@ -35,6 +35,7 @@
   - [Infinite stock](features/infinite-stock.md)
   - [Cards with different backs](features/cards-with-different-backs.md)
   - [Expanding areas](features/expanding-areas.md)
+  - [Tutorial AI](features/tutorial-ai.md)
 
 - Concepts
   - [Core concepts](concepts/core-concepts.md)

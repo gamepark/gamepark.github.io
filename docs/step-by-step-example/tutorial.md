@@ -104,7 +104,7 @@ Each tutorial step can have:
 - A focus
 - A move to play
 
-After the last step, the players is free to complete the game. The opponents play random moves, like the debug bot, unless a [Tutorial AI](TODO) is provided.
+After the last step, the players is free to complete the game. The opponents play random moves, like the debug bot, unless a [Tutorial AI](features/tutorial-ai.md) is provided.
 
 ### Tutorial Popup
 
