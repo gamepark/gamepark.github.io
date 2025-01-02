@@ -39,4 +39,4 @@ With the material approach, hiding information has become much more simple. Usin
 
 As long as only information about items has to be hidden and revealed, you do not have to implement `getGameView` and `getMoveView` by yourself.
 
-However, there is still one issue think that needs to be checked: if players take card in their hand that use to be visible to other players, then play cards secretly from their hands, everytime a player takes a card in hand the hand has to be shuffled, [otherwise the cards played can be predicted](TODO)!
+However, there is still one issue think that needs to be checked: if players take card in their hand that use to be visible to other players, then play cards secretly from their hands, everytime a player takes a card in hand the hand has to be shuffled, [otherwise the cards played can be predicted](troubleshooting/predictable-cards.md)!

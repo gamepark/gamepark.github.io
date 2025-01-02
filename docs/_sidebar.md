@@ -51,3 +51,4 @@
   - [Shuffling](troubleshooting/shuffling.md)
   - [Conditional consequences](troubleshooting/conditional-consequences.md)
   - [Location strategy not working](troubleshooting/location-strategy-not-working.md)
+  - [Predictable cards](troubleshooting/predictable-cards.md)
