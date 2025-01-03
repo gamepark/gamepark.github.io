@@ -38,7 +38,7 @@ class MainBoardSpotLocator extends Locator {
 
 `context.player` is the player displaying the game. :warning: For spectators, it is undefined!
 
-`location.x` is an optional field on the Location object. [More about Location objects](TODO).
+`location.x` is an optional field on the Location object. [More about Location objects](concepts/items-and-locations.md#location-properties).
 
 Depending on what you want to do, we have a lot of Locators feature built in the framework:
 * You can [display items on other items](features/parent-items.md)
@@ -46,6 +46,7 @@ Depending on what you want to do, we have a lot of Locators feature built in the
 * Use the [HandLocator](TODO) to display items in a fan shape
 * Use the [FlexLocator](TODO) inspired from the CSS flexbox
 * Use the [DeckLocator](TODO) for deck of cards
+* Use the [PileLocator](TODO) for disorganized piles of item
 
 ## Location strategies
 
