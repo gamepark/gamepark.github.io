@@ -46,7 +46,7 @@ Depending on what you want to do, we have a lot of Locators feature built in the
 * Use the [HandLocator](features/hand-of-cards.md) to display items in a fan shape
 * Use the [FlexLocator](features/lists-of-items.md#flexlocator) inspired from the CSS flexbox
 * Use the [DeckLocator](features/lists-of-items.md#decklocator) for deck of cards
-* Use the [PileLocator](TODO) for disorganized piles of item
+* Use the [PileLocator](features/piles-of-items.md) for disorganized piles of item
 
 ## Location strategies
 
