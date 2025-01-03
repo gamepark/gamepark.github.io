@@ -31,6 +31,7 @@
   - [Parent items](features/parent-items.md)
   - [Hiding strategies](features/custom-hiding-strategies.md)
   - [Location strategies](features/location-strategies.md)
+  - [Lists of items](features/lists-of-items.md)
   - [Items with quantity](features/items-with-quantity.md)
   - [Infinite stock](features/infinite-stock.md)
   - [Cards with different backs](features/cards-with-different-backs.md)
