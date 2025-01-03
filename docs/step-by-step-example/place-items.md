@@ -43,7 +43,7 @@ class MainBoardSpotLocator extends Locator {
 Depending on what you want to do, we have a lot of Locators feature built in the framework:
 * You can [display items on other items](features/parent-items.md)
 * Use the [ListLocator](features/lists-of-items.md#listlocator) to display a list of items
-* Use the [HandLocator](TODO) to display items in a fan shape
+* Use the [HandLocator](features/hand-of-cards.md) to display items in a fan shape
 * Use the [FlexLocator](features/lists-of-items.md#flexlocator) inspired from the CSS flexbox
 * Use the [DeckLocator](features/lists-of-items.md#decklocator) for deck of cards
 * Use the [PileLocator](TODO) for disorganized piles of item
