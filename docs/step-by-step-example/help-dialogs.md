@@ -65,6 +65,17 @@ The move is collected from the legal moves using `useLegalMove`, like in headers
 
 Have a look at [ChateauComboCardHelp](https://github.com/gamepark/chateau-combo/blob/main/app/src/material/help/ChateauComboCardHelp.tsx) for example.
 
+## Links in Help Dialogs
+
+You can create links to open another help dialog easily:
+```typescript jsx
+<Trans defaults="some.i18n.key" components={{
+  link: <PlayMoveButton css={linkButtonCss} move={displayMaterialHelp(MaterialType.Whatever)} local/>
+}}/>
+```
+
+Use `displayMaterialHelp` to open a dialog about some item, and `displayLocationHelp` for a location.
+
 ## Help dialogs for locations
 
 Sometime, instead of showing the help for the clicked item, you want to display the list of items inside the same location, for example when you want to display the list of cards inside a discard when you click on the top card.
