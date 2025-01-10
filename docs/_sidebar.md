@@ -40,6 +40,7 @@
   - [Translate images](features/translate-images.md)
   - [Expanding areas](features/expanding-areas.md)
   - [Tutorial AI](features/tutorial-ai.md)
+  - [Configure the animations](features/configure-the-animations.md)
 
 - Concepts
   - [Core concepts](concepts/core-concepts.md)
