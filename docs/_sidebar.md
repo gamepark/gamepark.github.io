@@ -60,3 +60,4 @@
   - [Location strategy not working](troubleshooting/location-strategy-not-working.md)
   - [Predictable cards](troubleshooting/predictable-cards.md)
   - [Cannot click on item](troubleshooting/cannot-click-item.md)
+  - [Cannot focus location](troubleshooting/cannot-focus-location.md)
