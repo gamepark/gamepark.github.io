@@ -42,6 +42,7 @@
   - [Tutorial AI](features/tutorial-ai.md)
   - [Configure the animations](features/configure-the-animations.md)
   - [Display all the discard](features/display-all-the-discard.md)
+  - [Display a location](features/display-a-location.md)
 
 - Concepts
   - [Core concepts](concepts/core-concepts.md)
