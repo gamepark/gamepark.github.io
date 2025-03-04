@@ -45,7 +45,9 @@ In [GameDisplay.tsx](https://github.com/gamepark/board-game-template/blob/main/a
 <GameTable xMin={-50} xMax={50} yMin={-30} yMax={30}
            margin={{ top: 7, left: 0, right: 30, bottom: 0 }}/>
 ```
-Do not be afraid of removing the margin, and simplify keep some empty space in the table area spots that the panels might cover.
+To gain space, you can also remove the margins, and keep some empty space in the areas that the panels will cover when zoomed out.
+
+The panels can also partially cover some items, like a hand of cards face-down, as long as it does not hide some useful information of course.
 
 To add more data inside the player panels, fill-in the counters property. Here is an example from [Architects of Amytis](https://github.com/gamepark/architects-of-amytis/blob/main/app/src/panels/ArchitectsOfAmytisPlayerPanel.tsx#L22):
 
