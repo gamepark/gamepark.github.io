@@ -63,3 +63,4 @@
   - [Predictable cards](troubleshooting/predictable-cards.md)
   - [Cannot click on item](troubleshooting/cannot-click-item.md)
   - [Cannot focus location](troubleshooting/cannot-focus-location.md)
+  - [Items disappear under another item.md](troubleshooting/items-disappear-under-another.md)
