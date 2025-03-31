@@ -55,6 +55,7 @@
 - Tips
   - [Design item ids](tips/design-item-ids.md)
   - [Put a card under a deck](tips/put-under-deck.md)
+  - [Upgrade the framework](tips/upgrade-the-framework.md)
 
 - Troubleshooting
   - [Shuffling](troubleshooting/shuffling.md)
