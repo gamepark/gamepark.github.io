@@ -34,6 +34,7 @@
   - [Lists of items](features/lists-of-items.md)
   - [Hand of cards](features/hand-of-cards.md)
   - [Piles of items](features/piles-of-items.md)
+  - [Buttons on items](features/buttons-on-items.md)
   - [Items with quantity](features/items-with-quantity.md)
   - [Infinite stock](features/infinite-stock.md)
   - [Cards with different backs](features/cards-with-different-backs.md)
