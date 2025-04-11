@@ -45,6 +45,7 @@
   - [Display all the discard](features/display-all-the-discard.md)
   - [Display a location](features/display-a-location.md)
   - [Random output in tutorials](features/random-output-tutorial.md)
+  - [Moves history](features/moves-history.md)
 
 - Concepts
   - [Core concepts](concepts/core-concepts.md)
