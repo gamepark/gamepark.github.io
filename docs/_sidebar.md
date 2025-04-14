@@ -46,6 +46,7 @@
   - [Display a location](features/display-a-location.md)
   - [Random output in tutorials](features/random-output-tutorial.md)
   - [Moves history](features/moves-history.md)
+  - [Final scoring](features/final-scoring.md)
 
 - Concepts
   - [Core concepts](concepts/core-concepts.md)
