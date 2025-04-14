@@ -24,7 +24,7 @@ A `MovePlayedLogDescription` contains:
 ## Best practices for writing log texts
 
 - Use present tense (not past): "The round ends"
-- Use only the 3rd person: "John plays a card" (even if John is ready that text)
+- Use only the 3rd person: "John plays a card" (even if John is reading that text)
 
 In the headers, it is important to use the first person to address the player (You must play a card), however in the moves history it is not, so we save time & bandwidth.
 
