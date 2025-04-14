@@ -2,7 +2,7 @@
 
 In many game, it is nice to be able to see what happened from the beginning. This move history (or game logs), can be implemented base on the moves played and the state of the game when that move was played.
 
-All the logs appears inside the top-left menu. They can also appear on top of the table for a short period of time after they are played (we call that "live logs").
+All the logs appears inside the top-left menu.
 
 In `index.tsx`, add the history in the GameProvider:
 
@@ -20,6 +20,22 @@ A `MovePlayedLogDescription` contains:
 - a depth, if you want an arrow + tab to display, if the move is a direct consequence of the previous log line
 - css: extra css to style the log line
 - liveCss: extra css that will only apply to the log line displayed on top of the table
+
+Logs can also appear on top of the table for a short period of time after they are played (we call that "live logs").
+
+To enable Live Logs, add this in `App.txs`:
+
+```typescript jsx
+{!loading && <LiveLogContainer css={liveLogCss} /> }
+```
+```typescript jsx
+const liveLogCss = css`
+  position: absolute;
+  right: 1em;
+  width: 45em;
+  pointer-events: none;
+`
+```
 
 ## Best practices for writing log texts
 
