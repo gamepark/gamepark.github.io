@@ -70,7 +70,7 @@ Have a look at [ChateauComboCardHelp](https://github.com/gamepark/chateau-combo/
 You can create links to open another help dialog easily:
 ```typescript jsx
 <Trans defaults="some.i18n.key" components={{
-  link: <PlayMoveButton css={linkButtonCss} move={displayMaterialHelp(MaterialType.Whatever)} local/>
+  link: <PlayMoveButton css={linkButtonCss} move={displayMaterialHelp(MaterialType.Whatever)} transient />
 }}/>
 ```
 
@@ -108,7 +108,7 @@ Finally, you can implement a help component for the location that displays the l
   type={MaterialType.Card}
   itemId={card.id}
   css={pointerCursorCss}
-  onClick={() => play(displayMaterialHelp(MaterialType.Card, card, index), { local: true })}
+  onClick={() => play(displayMaterialHelp(MaterialType.Card, card, index), { transient: true })}
 />
 ```
 
@@ -132,5 +132,5 @@ You can create Help Dialogs that are attached to a RuleId inside App.tsx like in
 
 Then, open some help dialog about a Rule id using `displayRulesHelp`:
 ```typescript jsx
-<Button onClick={() => play(displayRulesHelp(RuleId.Wars), { local: true })}>...</Button>
+<Button onClick={() => play(displayRulesHelp(RuleId.Wars), { transient: true })}>...</Button>
 ```
