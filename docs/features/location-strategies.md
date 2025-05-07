@@ -8,7 +8,7 @@ Location strategies are defined on the top rules class, material type by materia
 
 ```typescript
 export class GameTemplateRules {
-  locationStrategies = {
+  locationsStrategies = {
     [MaterialType.Card]: {
       [LocationType.Deck]: new PositiveSequenceStrategy(),
       [LocationType.PlayerHand]: new PositiveSequenceStrategy(),

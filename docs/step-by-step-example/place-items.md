@@ -57,7 +57,7 @@ Maintaining a proper sequence for `location.x` on every item of a list when they
 That's why we created the "location strategies":
 ```typescript
 export class GameTemplateRules {
-  locationStrategies = {
+  locationsStrategies = {
     [MaterialType.Card]: {
       [LocationType.Deck]: new PositiveSequenceStrategy(),
       [LocationType.PlayerHand]: new PositiveSequenceStrategy(),
