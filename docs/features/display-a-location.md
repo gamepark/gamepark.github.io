@@ -60,7 +60,9 @@ export class PlayerRegionLocator extends FlexLocator {
 :bulb: The `type` attribute for the location is optional here: by default the location type matching that locator will be applied.
 :bulb: If the locations does not depend on the context, you can use the `locations` or `location` fields as a shortcut.
 
-If the location has a parent item, you can either use the Locator (example above) to describe the locations, or you can use the parent item's material description:
+If the location has a parent item, you can either **use the Locator** (example above) to describe the locations, or you can **use the parent item's material description**:
+
+:warn: If you use the locator, the locations will exist on every item. Use `MaterialDescription.getLocations` (see below) to create the locations based on the item's argument.
 
 Here is an example with the locations from the board in [Expedition](https://github.com/gamepark/expedition/blob/main/app/src/material/BoardDescription.tsx):
 ```typescript jsx
