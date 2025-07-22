@@ -40,6 +40,8 @@ export const EndOfTurnHeader = () => {
 
 When only one player can be active in a rule, the header is [not much complex](https://github.com/gamepark/architects-of-amytis/blob/main/app/src/headers/ChooseBuildingTileHeader.tsx):
 
+:warn: never use a legal moves as a basis for display conditions in headers: the header will break in the tutorial (when legal moves are filtered) or during animations as well.
+
 ```typescript jsx
 export const ChooseBuildingTileHeader = () => {
   const { t } = useTranslation()
