@@ -27,7 +27,7 @@ const newRound = this.memorize<number>(Memory.Round, (previousRound) => previous
 
 You can get and set the memory inside the setup or any rule.
 
-:warn: When you modify the memory, it is a **direct modification of the game's state**, unlike the moves that are returned to be executed later.
+:warning: When you modify the memory, it is a **direct modification of the game's state**, unlike the moves that are returned to be executed later.
 Therefore, it is impossible and forbidden to modify the memory inside `getPlayerMoves` functions for instance.
 Also, as modifying the memory is a side effect, it must be used with care, and avoided if not necessary: it can be the source of nasty bugs.
 

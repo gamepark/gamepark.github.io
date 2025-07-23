@@ -6,4 +6,4 @@ If 2 cards go to the same position (for example, x=0 in a PositiveSequenceStrate
 
 For example, one item can have a `location.id` or a `location.player` while the other don't.
 
-:warn: If the item locator on the front end does not care about the id or the player, the items will be displayed at the same spot, however they do not have the same location area in the data.
+:warning: If the item locator on the front end does not care about the id or the player, the items will be displayed at the same spot, however they do not have the same location area in the data.

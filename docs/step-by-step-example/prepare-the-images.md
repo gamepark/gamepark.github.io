@@ -15,7 +15,7 @@ For images that are irregular, use PNG with transparency, and shadow included:
 - Add 10 pixels on every side
 - Add a 10 pixels all-around shadow
 
-:warn: To get the right images ratio, you need to consider that your item is now 0.2 centimeters higher and larger.
+:warning: To get the right images ratio, you need to consider that your item is now 0.2 centimeters higher and larger.
 
 :bulb: The framework will automatically generate webp versions of every image to save bandwidth.
 

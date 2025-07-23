@@ -36,7 +36,7 @@ If you implement `SecretMaterialRules`, you gain access to the player who will s
 type HidingSecretsStrategy = (item: MaterialItem, player?: number) => string[]
 ```
 
-:warn: The player can be undefined because it can be a spectator of the game. Make sure to always hide everything to the spectator!
+:warning: The player can be undefined because it can be a spectator of the game. Make sure to always hide everything to the spectator!
 
 Example:
 
