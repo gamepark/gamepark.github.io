@@ -29,6 +29,7 @@
   - [Rule moves](features/rule-moves.md)
   - [Custom moves](features/custom-moves.md)
   - [Parent items](features/parent-items.md)
+  - [Memory](features/memory.md)
   - [Hiding strategies](features/custom-hiding-strategies.md)
   - [Location strategies](features/location-strategies.md)
   - [Lists of items](features/lists-of-items.md)
