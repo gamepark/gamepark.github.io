@@ -16,7 +16,7 @@ You can also memorize different data for each player under the same memory key:
 ```typescript
 this.memorize(Memory.PlayerStuff, stuff, player)
 this.remind<PlayerColor>(Memory.PlayerStuff, player)
-this.forget(Memory.PlayerStuff, player) // delete player's entry
+this.forget(Memory.PlayerStuff, player) // deletes player's entry
 this.forget(Memory.PlayerStuff) // deletes every players entries
 ```
 
