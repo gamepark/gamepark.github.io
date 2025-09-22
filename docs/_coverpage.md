@@ -1,6 +1,6 @@
 ![logo](_media/logo.svg)
 
-# Game Park framework <small>6.29</small>
+# Game Park framework <small>7.0</small>
 
 > Board games. Online. Fast.
 
