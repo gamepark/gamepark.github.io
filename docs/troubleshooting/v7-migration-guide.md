@@ -59,11 +59,10 @@ Here, you should have changes in the `yarn.lock` file, and one new file: `.yarnr
 ### Cleanup the app/public folder
 
 - Delete everything except:
-  - `avatar-[].png`, `player-id-[].png`, `rules-[].pdf` files
+  - `avatar-[].png`, `player-id-[].png`, `rules-[].pdf` and `robots.txt` files
   - `box-640.png`, `box-640.webp`, `cover-1920.jpg`, `cover-1920.webp`
 - Regenerate the favicon from avatar-320.png using https://realfavicongenerator.net/
   - Only take `favicon.ico`, `favicon.svg` and `favicon-96x96.png`
-- Copy `robots.txt` from the [Board Game Template](https://github.com/gamepark/board-game-template/blob/main/app/public/robots.txt)
 
 ### Replace lodash with es-toolkit
 
