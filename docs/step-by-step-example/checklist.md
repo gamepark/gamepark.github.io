@@ -15,7 +15,7 @@ Once the project is complete, before it can hit production you need to check tha
 - All texts have been checked by an automatic proofreader
 - In app/public, the PDF of the rules is available in English and French
   - PDF must be cropped if needed and compressed
-- In app/public, the favicon is generated using https://www.favicon-generator.org/
+- In app/public, the favicon is generated using https://realfavicongenerator.net/
 - In app/public, the cover, box and avatar images are available
 - If the game options includes [players ids](features/game-options.md?id=players-identifiers), images for these are available in app/public
 - The publisher tested and validated the game and the tutorial

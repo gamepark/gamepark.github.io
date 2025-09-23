@@ -86,4 +86,4 @@ Here, you should have changes in the `yarn.lock` file, and one new file: `.yarnr
 
 ### Test it!
 
-- Test the tutorial and complete the game to check that everything is fine :)
+- Run `yarn dev` (no longer yarn start) and test the tutorial and complete the game to check that everything is fine :)
