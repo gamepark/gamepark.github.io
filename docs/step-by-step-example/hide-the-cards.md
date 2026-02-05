@@ -36,7 +36,7 @@ export class GameTemplateRules extends SecretMaterialRules {
   hidingStrategies = {
     [MaterialType.Card]: {
       [LocationType.Deck]: hideItemId,
-      [LocationType.PlayerHand]: hideIdToOthers,
+      [LocationType.PlayerHand]: hideItemIdToOthers,
     }
   }
 }

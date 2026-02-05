@@ -4,7 +4,7 @@ You can add buttons close to an item on the table if you need extra actions avai
 
 To do so, you have to implement `getItemMenu` in the MaterialDescription. [See examples](https://github.com/search?q=org%3Agamepark%20getItemMenu&type=code)
 
-By default, the menu will only when the item is clicked, unless you add `menuAlwaysVisible = true` too.
+By default, the menu will only appear when the item is clicked, unless you add `menuAlwaysVisible = true` too.
 
 If the menu is not always visible, it is highly recommended to include a help button to open the help dialog. The default help button can be built using `getHelpButton`.
 

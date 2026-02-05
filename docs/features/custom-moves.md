@@ -65,6 +65,43 @@ return this.game.players.map(player => this.customMove(CustomMoveType.ChoosePlay
 
 :bulb: It is often better to create a generic CustomMoveType.ChoosePlayer and reuse it for different effects than creating many different types.
 
+## Enable drag and drop for a custom move
+
+You can trigger a custom move using drag and drop.
+
+First you need to tell that an item can be dragged when the custom move is available. You do it by overriding `canDrag` in the Material Description.
+
+Here is an [example from AracKhan Wars](https://github.com/gamepark/arackhan-wars/blob/a05f6c6069a78226df134ec84ce271f6d989a2e2/app/src/material/FactionCardDescription.tsx#L467):
+
+```typescript jsx
+export class FactionCardDescription extends CardDescription {
+  //...
+  canDrag(move: MaterialMove, context: ItemContext) {
+    if (isCustomMoveType(CustomMoveType.Attack)(move)) {
+      return move.data.card === context.index
+    }
+
+    return super.canDrag(move, context)
+  }
+}
+```
+
+Then you need to define where the item can be dropped. Override `getMoveDropLocations` in your Material Description:
+
+```typescript jsx
+export class FactionCardDescription extends CardDescription {
+  getMoveDropLocations(context: ItemContext, move: MaterialMove) {
+    if (isCustomMove(move) && move.type === CustomMoveType.Attack) {
+      const targets = move.data.targets
+      return targets.map(target => ({ type: LocationType.Card, parent: target }))
+    }
+    return super.getMoveDropLocations(context, move)
+  }
+}
+```
+
+This method returns the locations where the dragged item can be dropped to trigger the custom move. The framework will highlight these locations and allow the drop.
+
 ## More complex use cases
 
 Search for "[enum CustomMoveType](https://github.com/search?q=org%3Agamepark+enum+CustomMoveType&type=code)" in our GitHub repositories to find a lot of other use cases!

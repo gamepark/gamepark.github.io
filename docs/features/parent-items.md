@@ -60,7 +60,7 @@ The item will automatically be placed relative to the parent card based on the `
 
 Once the parent item is known inside the locator, you can place the item relative to the parent item using either `coordinates` (in centimeters, as usual) or `positionOnParent` (or both).
 
-The position on parent allows to place an item **as a percentage or the width and height of the parent**:
+The position on parent allows to place an item **as a percentage of the width and height of the parent**:
 
 ```typescript
 class OnCardLocator extends Locator {

@@ -52,5 +52,5 @@ type Location = {
 - the id is a free field, used in last resort, when the type, player and parent field are not enough
 - player: the owner of the location. Use it to identify the player the own the location, and the items there
 - parent: the index of another item in the game. Use it if and only if the item is placed on top of another dynamic item.
-- rotation: a free field to describe any king of rotation that the item can have at this location
+- rotation: a free field to describe any kind of rotation that the item can have at this location
 - x, y, z: use it if you need a coordinates system at this location 

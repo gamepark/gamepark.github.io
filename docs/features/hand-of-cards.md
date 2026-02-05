@@ -15,11 +15,11 @@ For cards in hands, you items should have that location:
 }
 ```
 
-You should use the [PositiveSequenceStrategy](step-by-step-example/place-items.md#location-strategies) for this location.
+You should use the [PositiveSequenceStrategy](features/location-strategies.md#positive-sequence-strategy) for this location.
 
 ## Secure the data
 
-As the hand should only be seen by the player holding it, the game should extend `SecretMaterialRule` and the `hideToOthers` strategy should be used. [More info here](step-by-step-example/hide-the-cards.md)
+As the hand should only be seen by the player holding it, the game should extend `SecretMaterialRules` and the `hideItemIdToOthers` strategy should be used. [More info here](step-by-step-example/hide-the-cards.md)
 
 If [cards have different backs](features/cards-with-different-backs.md), you will use `hideFrontToOthers` instead.
 

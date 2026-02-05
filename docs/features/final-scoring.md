@@ -15,7 +15,7 @@ enum ScoringKeys {
   SomeOtherSubScoreType
 }
 
-export class SolstisScoring implements ScoringDescription {
+export class MyGameScoring implements ScoringDescription {
   getScoringKeys(rules: MyGameRules) {
     return getEnumValues(ScoringKeys)
   }

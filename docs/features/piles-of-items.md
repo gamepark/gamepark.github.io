@@ -32,7 +32,7 @@ getPileId(item: MaterialItem<P, L>, _context: ItemContext<P, M, L>): string {
 
 You can override `getPileId` to create different piles based on something else, like the item id.
 
-If you want to create a stock for coins of different values for example, you need the same location for the [Money utility](features/items-with-quantity.md#Money) to work, but you need different piles for the coins to display properly:
+If you want to create a stock for coins of different values for example, you need the same location for the [Money utility](features/items-with-quantity.md#money) to work, but you need different piles for the coins to display properly:
 
 ```
 getPileId(item: MaterialItem) {

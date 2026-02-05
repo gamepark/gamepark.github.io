@@ -23,7 +23,7 @@ Then you can react to the movement of items to shuffle the deck:
 class SomeRule {
   afterItemMove(move: ItemMove) {
     if (isMoveItemsAtOnce(move) && move.itemType === MaterialType.Card) {
-      const deck = this.material(MaterialType.Card).location(LocationType.Discard)
+      const deck = this.material(MaterialType.Card).location(LocationType.Deck)
       return [deck.shuffle()]
     }
     return []
@@ -55,7 +55,7 @@ You need to react to the shuffle inside `afterItemMove`:
 class SomeRule {
   afterItemMove(move: ItemMove) {
     if (isShuffle(move) && move.itemType === MaterialType.Card) {
-      const deck = this.material(MaterialType.Card).location(LocationType.Discard).deck()
+      const deck = this.material(MaterialType.Card).location(LocationType.Deck).deck()
       return deck.draw({ type: LocationType.PlayerHand, player: this.player }, 5)
     }
     return []

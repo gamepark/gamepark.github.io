@@ -64,7 +64,7 @@ export class ExampleRule extends PlayerTurnRule {
   
   afterItemMove(move: ItemMove): MaterialMove[] {
     if (isMoveItemType(MaterialType.Card)(move) && move.location.type === LocationType.PlayArea) {
-      return [this.startPlayerTurn(this.nextPlayer)]
+      return [this.startPlayerTurn(RuleId.ExampleRule, this.nextPlayer)]
     }
     return []
   }

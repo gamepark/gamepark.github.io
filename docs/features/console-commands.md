@@ -34,8 +34,8 @@ You can also undo multiple moves at once: `game.undo(5)`
 
 ## Change the animations speed
 
-- Make animations 3 times faster: `setAnimationsSpeed(3)`
-- Make animations 5 times slower: `setAnimationsSpeed(0.2)`
+- Make animations 3 times faster: `game.setAnimationsSpeed(3)`
+- Make animations 5 times slower: `game.setAnimationsSpeed(0.2)`
 
 ## Access the game and moves state
 

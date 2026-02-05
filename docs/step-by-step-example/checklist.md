@@ -2,7 +2,7 @@
 
 Once the project is complete, before it can hit production you need to check that all those tasks are done:
 
-- [Winner is identified](step-by-step-example/end-of-the-game.mdidentify-the-winner)
+- [Winner is identified](step-by-step-example/end-of-the-game.md#identify-the-winner)
 - All the headers are done
 - All the help dialogs have useful text
 - The tutorial is available
