@@ -36,7 +36,9 @@ export const EndOfTurnHeader = () => {
 }
 ```
 
-:bulb: We use [React-i18next](https://react.i18next.com/) to translate the texts
+:bulb: We use [React-i18next](https://react.i18next.com/) with [ICU MessageFormat](https://unicode-org.github.io/icu/userguide/format_parse/messages/) to translate the texts.
+
+:warning: Use **single braces** for interpolation: `{player}`, `{amount}`. Do **not** use double braces (`{{player}}`), which is the default i18next syntax but not used here.
 
 When only one player can be active in a rule, the header is [not much complex](https://github.com/gamepark/architects-of-amytis/blob/main/app/src/headers/ChooseBuildingTileHeader.tsx):
 
