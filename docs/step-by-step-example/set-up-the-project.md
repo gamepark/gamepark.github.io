@@ -40,8 +40,8 @@ At the root directory of the project, run this command to install all the depend
 
 Once the dependencies are install, you can run this command to start a debug session of the game:
 
-`yarn start`
+`yarn dev`
 
-I will start a local server on port 3000 and open your browser at this url: http://localhost:3000/
+It will start a local server on port 3000. Then open your browser at this url: http://localhost:3000/
 
 :bulb: we use [Create React App](https://github.com/facebook/create-react-app) to start and debug the web app.
