@@ -40,3 +40,30 @@ With the material approach, hiding information has become much more simple. Usin
 As long as only information about items has to be hidden and revealed, you do not have to implement `getGameView` and `getMoveView` by yourself.
 
 However, there is still one issue think that needs to be checked: if players take card in their hand that use to be visible to other players, then play cards secretly from their hands, everytime a player takes a card in hand the hand has to be shuffled, [otherwise the cards played can be predicted](troubleshooting/predictable-cards.md)!
+
+## Keeping moves secret
+
+Some games have phases where players act simultaneously and their actions must remain hidden until everyone is done — for example, a secret planning phase.
+
+Hiding Strategies hide **information about items** (like the front of a card), but they don't prevent **moves themselves** from being transmitted. An opponent would still see a card moving even if they can't see which card it is.
+
+To delay the transmission of moves, implement `keepMoveSecret` in your rules class (which must extend `SecretMaterialRules`):
+
+### `keepMoveSecret`
+
+```
+keepMoveSecret(move: MaterialMove, playerId: PlayerId): boolean
+```
+
+Return `true` to prevent this individual move from being sent to `playerId`. The framework re-evaluates this function whenever the game state changes. When it returns `false`, the move is revealed.
+
+### Example: secret planning phase
+
+```
+keepMoveSecret(move: MaterialMove) {
+  if (isEndPlayerTurn(move)) return false
+  return this.game.rule?.id === RuleId.Planning
+}
+```
+
+During the Planning rule, all moves are withheld from other players. `EndPlayerTurn` is excluded so that players can see who has finished planning. As soon as the rule changes (e.g. to Production), the function returns `false` and every hidden move is revealed at once.
