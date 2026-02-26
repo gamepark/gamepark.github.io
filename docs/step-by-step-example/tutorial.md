@@ -155,6 +155,14 @@ export class Tutorial {
 ```
 You can focus either `staticItems` to target [items that are static](/step-by-step-example/display-first-item?id=display-a-static-item), `materials` to target [non-static items](/step-by-step-example/create-items), or `locations`.
 
+:bulb: To reference static items from a description, use `description.staticItem` for a single item, or `description.staticItems` for descriptions that return multiple items via `getStaticItems()`:
+```
+// Single static item (e.g. a board)
+staticItems: { [MaterialType.Board]: [boardDescription.staticItem] }
+// Multiple static items (e.g. token stocks)
+staticItems: { [MaterialType.CharacterToken]: characterTokenDescription.staticItems }
+```
+
 If you target a location that usually does not exist on the table, it will be automatically created.
 
 If you target a location that is a part of a parent item, a mask will be applied on top of the item to highlight the location:
