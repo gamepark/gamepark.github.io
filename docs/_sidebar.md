@@ -78,3 +78,4 @@
   - [Cannot focus location](troubleshooting/cannot-focus-location.md)
   - [Items disappear under another item](troubleshooting/items-disappear-under-another.md)
   - [Migration to v7](troubleshooting/v7-migration-guide.md)
+  - [Migration to v7.3](troubleshooting/v7.3-migration-guide.md)
