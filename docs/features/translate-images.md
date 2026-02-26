@@ -12,10 +12,72 @@ Although it is possible to ask for images without texts and inject the text on t
 
 For this reason, the preferred solution is to add the images in multiple languages.
 
-1. Add the translated images in the images folder (you can organize them by language: `images/cards/en` and `images/cards/fr` for instance).
-2. Create a new MaterialDescription class that extends the original one, like in [Chateau Combo](https://github.com/gamepark/chateau-combo/blob/main/app/src/material/FrenchChateauComboCardDescription.tsx).
-3. Inject a new materialI18 property in the [GameProvider](https://github.com/gamepark/chateau-combo/blob/main/app/src/index.tsx).
+### 1. Add the translated images
+
+Organize your images by language in the images folder:
+
+```
+app/src/images/cards/
+├── en/
+│   ├── Card_1_EN_FirstCard.jpg
+│   └── Card_2_EN_SecondCard.jpg
+└── fr/
+    ├── Card_1_FR_FirstCard.jpg
+    └── Card_2_FR_SecondCard.jpg
+```
+
+### 2. Create a localized MaterialDescription
+
+Create a new MaterialDescription class that extends the original one and overrides the `images` property:
+
+```typescript
+// FrenchCardDescription.ts
+import { Card } from '@gamepark/my-game/material/Card'
+import { MyCardDescription } from './MyCardDescription'
+import FirstCard_FR from '../images/cards/fr/Card_1_FR_FirstCard.jpg'
+import SecondCard_FR from '../images/cards/fr/Card_2_FR_SecondCard.jpg'
+
+class FrenchCardDescription extends MyCardDescription {
+  images = {
+    [Card.FirstCard]: FirstCard_FR,
+    [Card.SecondCard]: SecondCard_FR
+  }
+}
+
+export const frenchCardDescription = new FrenchCardDescription()
+```
+
+The class inherits everything from the base description (dimensions, back images, etc.) and only overrides the front images.
+
+See [Skyrift](https://github.com/gamepark/skyrift/blob/main/app/src/material/FrenchCardDescription.ts) for a complete example.
+
+### 3. Export `materialI18n` and inject it in the GameProvider
+
+In `Material.ts`, export a `materialI18n` object that maps locale codes to partial material descriptions:
+
+```typescript
+// Material.ts
+import { frenchCardDescription } from './FrenchCardDescription'
+
+export const materialI18n: Record<string, Partial<Record<MaterialType, MaterialDescription>>> = {
+  fr: {
+    [MaterialType.Card]: frenchCardDescription
+  }
+}
+```
+
+Then pass it to the `GameProvider` in `main.tsx`:
+
+```
+import { Material, materialI18n } from './material/Material'
+
+<GameProvider
+  material={Material}
+  materialI18n={materialI18n}
+  // ...other props
+>
+```
 
 :bulb: The images will automatically match the language inside the "locale" param in the url (try for example https://localhost:3000/?locale=fr). Only the right images are preloaded and used so it does not increase the loading time of the game.
 
-The translated images are usually provided by the published. The main description acts as the fallback if the user uses a language without translated images.
+The translated images are usually provided by the publisher. The main description acts as the fallback if the user uses a language without translated images.
