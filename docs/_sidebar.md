@@ -63,6 +63,9 @@
   - [Identify adjacent groups](tips/identify-adjacent-groups.md)
 
 - Release notes
+  - [v7.7](release-notes/v7.7.md)
+  - [v7.6](release-notes/v7.6.md)
+  - [v7.5](release-notes/v7.5.md)
   - [v7.4](release-notes/v7.4.md)
   - [v7.3](release-notes/v7.3.md)
   - [v7.2](release-notes/v7.2.md)
