@@ -4,7 +4,7 @@ The tutorial is the very last step of adapting a game. It should only be coded o
 
 ## Writing the texts
 
-As for headers and help dialogs, tutorial texts are translated inside the translation file.
+As for headers and help dialogs, tutorial texts are translated inside the translation files (`app/public/translation/{locale}.json`).
 
 Good tutorial are very hard to write: we can write the texts so the developed only have to integrate them in the code.
 
@@ -108,7 +108,7 @@ After the last step, the players is free to complete the game. The opponents pla
 
 ### Tutorial Popup
 
-All you need is to provide the translated text, using the same translation file as for header and help dialogs.
+All you need is to provide the translated text, using the same translation files as for headers and help dialogs (`app/public/translation/{locale}.json`).
 
 By default, the popup is centered in the screen. You can use the position attribute to translate it away from the default position:
 ```typescript jsx

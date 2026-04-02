@@ -61,9 +61,9 @@ export function getPlayerName(playerId: PlayerColor, t: TFunction) {
 }
 ```
 
-The option and values labels will be displayed on the website. The translation keys (here "Player color", "Red", "Blue", "Green" and "Yellow") must be in the [translation file](https://docs.google.com/spreadsheets/d/1qvN10Iaen2siq0s-m8tyB3U80Ksq5HiPKgPQuUOupwY/edit?usp=sharing), and the "Website" column must be checked.
+The option and values labels will be displayed on the website. The translation keys (here "Player color", "Red", "Blue", "Green" and "Yellow") must be in the translation files (`app/public/translation/{locale}.json`).
 
-:bulb: the "Game" column must also be checked for the player id option values, because they will be used as the fallback name for player's without a name.
+:bulb: the player id option values will also be used as the fallback name for players without a name.
 
 :warning: With player id options, `this.game.players` will contain unique identifiers for the players in a random order.
 

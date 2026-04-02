@@ -6,13 +6,18 @@ The headers are the texts that appears on top of the screen. It must guide the u
 
 ## Internationalisation
 
-Headers must be available in multiple language.
+Headers must be available in multiple languages.
 
-We use a [translation file](https://docs.google.com/spreadsheets/d/1qvN10Iaen2siq0s-m8tyB3U80Ksq5HiPKgPQuUOupwY/edit) for every texts in games that must be translated.
+Translation files are stored in the repository at `app/public/translation/{locale}.json` (e.g. `en.json`, `fr.json`). Each file is a flat key-value JSON object:
 
-Once you have writing access, you can download the [translation.json](https://game-park.com/api/translations?game=code-of-the-game) file and override [the existing one in app/src](https://github.com/gamepark/board-game-template/blob/main/app/src/translations.json).
+```json
+{
+  "header.choose-building.you": "Choose a building tile",
+  "header.choose-building.player": "{player} must choose a building tile"
+}
+```
 
-:warning: Do not forget to format the file after download, so that changes can be tracked!
+:bulb: During development, you can write translations only in your native language. Translations to other languages will be done later. Add `?locale=fr` (or `es`, `en`...) to the URL to test the texts in your language. Missing keys are logged as warnings in development and as errors in production.
 
 ## Headers guidelines
 

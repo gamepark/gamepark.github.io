@@ -40,7 +40,7 @@ export const FirstPlayerCardHelp = () => {
 
 Writing good help dialogs is hard and requires some skill in designing good User Experience (UX).
 
-If you do not feel comfortable with it, we can write the texts in the translations file, so that you only have to integrate them.
+If you do not feel comfortable with it, we can write the texts in the translation files (`app/public/translation/{locale}.json`), so that you only have to integrate them.
 
 Here are some guidelines:
 - Show the material name in the label. You can personalize it, for example: "John's coins".
