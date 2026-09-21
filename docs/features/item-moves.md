@@ -2,6 +2,38 @@
 
 All the moves that are movements of material are called **Material Moves**.
 
+## Filter items
+
+```typescript
+this.material(MaterialType.Card)
+  .location(LocationType.Hand)
+  .player(this.player)
+  .id<CardId>(id => isVirus(id))
+```
+
+- `this.material(type)` returns every item of that type. Each filter returns a **new** Material instance (it is immutable), so filters can be chained and a filtered instance can be kept and reused.
+- Filters: `location`, `player`, `id`, `locationId`, `rotation`, `parent`, `selected`, `index` / `indexes`. Each takes either a value or a predicate.
+- `filter((item, index) => boolean)` is the generic filter: the predicate receives the item itself.
+- `sort`, `minBy`, `maxBy` and `limit` order and trim the items.
+- Every move function below (`moveItems`, `deleteItems`, `shuffle`...) applies to the filtered items. `length`, `getItems()`, `getIndexes()` read them.
+
+**Keep it a Material.** Do not turn a selection into an array of indexes, then rebuild one Material per index to read or move each item. Filter once and call the move function on the result. A helper that selects items should return a Material, not `number[]`.
+
+```typescript
+// ❌ Two `this.material(...)` calls per card: one to read it, one to move it
+this.river.getIndexes()
+  .filter(index => getCost(this.material(MaterialType.Card).getItem<CardId>(index).id) <= coins)
+  .map(index => this.material(MaterialType.Card).index(index).moveItem({ type: LocationType.Discard }))
+
+// ✅ One filter, one call
+affordableCards() {
+  return this.river.filter<CardId>(item => getCost(item.id) <= coins)
+}
+this.affordableCards().moveItems({ type: LocationType.Discard })
+```
+
+Indexes are only needed when the output itself is an index, for instance the data of a [custom move](features/custom-moves.md): `material.getIndexes().map(index => this.customMove(CustomMoveType.Copy, index))`.
+
 ## Create items
 
 ```typescript
