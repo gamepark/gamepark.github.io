@@ -58,6 +58,7 @@
   - [Location area](concepts/location-area.md)
 
 - Tips
+  - [Adapt a game with Claude](tips/adapt-a-game-with-claude.md)
   - [Design item ids](tips/design-item-ids.md)
   - [Put a card under a deck](tips/put-under-deck.md)
   - [Upgrade the framework](tips/upgrade-the-framework.md)
