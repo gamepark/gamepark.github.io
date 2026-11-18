@@ -6,6 +6,14 @@ Once the project is complete, before it can hit production you need to check tha
 - All the headers are done
 - All the help dialogs have useful text
 - The tutorial is available
+- The [tutorial AI](features/tutorial-ai.md) is available:
+  - It plays whole games to the end, at every player count
+  - It never reads hidden information: the framework gives it the full game state
+  - It answers in about 1 second at most, or runs in a worker
+- Hovering items works everywhere:
+  - Every card or tile whose text matters zooms until it is readable
+  - The zoom stays entirely on screen, including at the edges of the table
+  - Nothing essential is available only on hover, since mobile devices have none
 - Someone made a security review:
   - [hiding strategies](step-by-step-example/hide-the-cards.md) are properly setup
   - If players add cards in their hand that were visible, then play cards hidden, the hand is shuffled so that other players cannot predict what they play
