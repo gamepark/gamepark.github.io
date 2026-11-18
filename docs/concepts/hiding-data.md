@@ -14,7 +14,7 @@ In the game state, information sometimes has to be hidden.
 
 In the moves, sometime we need to hide some information, and sometimes we need to reveal information: for example, if a players draws a cards from a shuffled deck, that player also need to receive the id of the card!
 
-The API has 2 functions: `getGameView` and `getMoveView`, to transform the game state and the move into what players can view of it.
+The API has 2 functions: `getView` and `getMoveView`, to transform the game state and the move into what players can view of it.
 
 ## Incomplete or Secret information
 
@@ -31,13 +31,13 @@ Therefore, there are 3 different level of information visibility on Game Park:
 2. Hidden information: some information is hidden, but the same information is available to everyone
 3. Secret information: players have different information
 
-In a game with secret information, the API has 2 move functions: `getPlayerGameView` and `getPlayerMoveView`.
+In a game with secret information, the API has 2 more functions: `getPlayerView` and `getPlayerMoveView`.
 
 ## Hiding Material
 
 With the material approach, hiding information has become much more simple. Using the [Hiding Strategies](features/custom-hiding-strategies.md), we are able to write automatically all the game views and game moves for everyone.
 
-As long as only information about items has to be hidden and revealed, you do not have to implement `getGameView` and `getMoveView` by yourself.
+As long as only information about items has to be hidden and revealed, you do not have to implement `getView` and `getMoveView` by yourself.
 
 However, there is still one issue think that needs to be checked: if players take card in their hand that use to be visible to other players, then play cards secretly from their hands, everytime a player takes a card in hand the hand has to be shuffled, [otherwise the cards played can be predicted](troubleshooting/predictable-cards.md)!
 

@@ -43,6 +43,7 @@
   - [Expanding areas](features/expanding-areas.md)
   - [Tutorial AI](features/tutorial-ai.md)
   - [Configure the animations](features/configure-the-animations.md)
+  - [Hover items](features/hover-items.md)
   - [Display all the discard](features/display-all-the-discard.md)
   - [Display a location](features/display-a-location.md)
   - [Random output in tutorials](features/random-output-tutorial.md)
@@ -63,6 +64,9 @@
   - [Identify adjacent groups](tips/identify-adjacent-groups.md)
 
 - Release notes
+  - [v7.10](release-notes/v7.10.md)
+  - [v7.9](release-notes/v7.9.md)
+  - [v7.8](release-notes/v7.8.md)
   - [v7.7](release-notes/v7.7.md)
   - [v7.6](release-notes/v7.6.md)
   - [v7.5](release-notes/v7.5.md)

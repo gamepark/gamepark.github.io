@@ -45,7 +45,7 @@ Here, you should have changes in the `yarn.lock` file, and one new file: `.yarnr
 - Rename the title inside `/app/index.html` with the name of you game
 - Add `/app/vite.config.ts` and `/app/src/vite-env.d.ts`
 - Replace line 15 the alias with the name of you game in `/app/vite.config.ts`
-- Add `/app/src/main.tsx` from the [Board Game Template](https://github.com/gamepark/board-game-template/blob/main/app/src/main.html)
+- Add `/app/src/main.tsx` from the [Board Game Template](https://github.com/gamepark/board-game-template/blob/main/app/src/main.tsx)
   - Replace the default GameProvider with the one from the exiting `/app/src/index.tsx` file
   - Report any extra instruction such as `addStylesheetUrl` from index.tsx to main.tsx.
   - Delete `/app/src/index.tsx`

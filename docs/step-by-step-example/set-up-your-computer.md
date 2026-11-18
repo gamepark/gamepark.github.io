@@ -22,7 +22,7 @@ As our framework takes care of nearly everything here, **you do not need to lear
 
 ### NodeJS
 
-You need to install [Node.js](https://nodejs.org/fr) to run Typescript/Javascript programs on your computer.
+You need to install [Node.js](https://nodejs.org/fr), version 22 or later, to run Typescript/Javascript programs on your computer.
 
 ### Any code editor
 
@@ -36,4 +36,4 @@ You need to install [Git](https://git-scm.com/) to be able to check out the proj
 
 ### Yarn: package and project manager
 
-You need to install [Yarn](https://yarnpkg.com/) to install the project dependencies, test your code, and deploy.
+You need [Yarn](https://yarnpkg.com/) to install the project dependencies, test your code, and deploy. With Node.js 22, run `corepack enable` once: each project then uses the Yarn version it declares.

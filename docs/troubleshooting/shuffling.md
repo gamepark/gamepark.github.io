@@ -15,7 +15,7 @@ However, shuffling during the game can be more tricky, because:
 If you need to shuffle a discard to form a new deck, you can start by moving all the items at once:
 ```typescript
 const discard = this.material(MaterialType.Card).location(LocationType.Discard)
-return [discard.moveItemsAtOnce(LocationType.Deck)]
+return [discard.moveItemsAtOnce({ type: LocationType.Deck })]
 ```
 
 Then you can react to the movement of items to shuffle the deck:
@@ -40,8 +40,8 @@ So, you can prepare the shuffling move before the items are in the deck, as long
 ```typescript
 const discard = this.material(MaterialType.Card).location(LocationType.Discard)
 return [
-  discard.moveItemsAtOnce(LocationType.Deck),
-  discard.shuffled()
+  discard.moveItemsAtOnce({ type: LocationType.Deck }),
+  discard.shuffle()
 ]
 ```
 
@@ -56,7 +56,7 @@ class SomeRule {
   afterItemMove(move: ItemMove) {
     if (isShuffle(move) && move.itemType === MaterialType.Card) {
       const deck = this.material(MaterialType.Card).location(LocationType.Deck).deck()
-      return deck.draw({ type: LocationType.PlayerHand, player: this.player }, 5)
+      return deck.deal({ type: LocationType.PlayerHand, player: this.player }, 5)
     }
     return []
   }

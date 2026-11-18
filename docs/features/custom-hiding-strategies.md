@@ -28,7 +28,7 @@ Here is an example using the item's rotation:
 const hideIdWhenRotated = (item: MaterialItem) => item.location.rotation ? ['id'] : []
 ```
 
-:bulb: [Lodash unset function](https://lodash.com/docs/4.17.15#unset) is used to hide the paths returned by the hiding strategy.
+:bulb: The paths returned by the hiding strategy are removed with the `unset` function of `es-toolkit/compat`.
 
 If you implement `SecretMaterialRules`, you gain access to the player who will see the item:
 

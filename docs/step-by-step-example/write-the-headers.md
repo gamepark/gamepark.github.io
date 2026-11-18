@@ -26,6 +26,8 @@ The headers must follow this rules, by order of priority:
 2. If only one player is awaited, display the player's name and what he has to do
 3. If multiple players are awaited, simply say "Players must do..."
 
+Headers are labels, not prose: keep them short, and do not end them with a full stop.
+
 Also, try to never use the player's name when speaking about himself: do not say "John must do..." but "You must do...". Also try to say "Jane must take a card from you" instead of "Jane must take a card from John".
 
 ## Headers examples
@@ -72,7 +74,7 @@ Sometimes, you need to have buttons in you headers, for example to play [custom 
 export const PlayerTurnHeader = () => {
   const pass = useLegalMove(isCustomMoveType(CustomMoveType.Pass))
   return (
-    <Trans defaults="header.turn.me" components={{
+    <Trans i18nKey="header.turn.me" components={{
       pass: <PlayMoveButton move={pass}/>
     }}/>
   )

@@ -18,7 +18,7 @@ class MainBoardSpotLocator extends Locator {
 export const mainBoardSpotLocator = new MainBoardSpotLocator()
 ```
 
-This locator simply moves the items 10 centimeters to the left and 10 centimeters to the bottom.
+This locator simply moves the items 10 centimeters to the right and 10 centimeters to the bottom.
 
 ## Dynamic position
 
@@ -67,19 +67,8 @@ export class GameTemplateRules {
 }
 ```
 
-The responsibility for a location strategy is to maintain the consistency of the properties `x`, `y`, `z` of items sharing the same [**location area**](concepts/location-area.md). Items share the same location area when they have the same location `type`, `id`, `player` and `parent`:
-* `location.type` is the mandatory LocationType
-* `location.player` is the optional owner player
-* `location.parent` is the optional parent item (example: a token on a card)
-* `location.id` is a free-to-use field to differentiate locations
-
-The `PositiveSequenceStrategy` will make sure item starts with x = 0 to x = n-1 everytime an item move in, inside or out the location area:
-* If you add an item without specify a `location.x`, then it will take the highest x.
-* If you specify `location.x`, every item with the same or higher x will move by x+1. 
-* If an item is removed, every item with a higher x will move by x-1 automatically.
-
-The `FillGapStrategy` is similar to the `PositiveSequenceStrategy`, except that when an item is remove, the gap is not filled, until another item is added.
+A location strategy maintains the `x`, `y` and `z` of the items sharing the same [**location area**](concepts/location-area.md).
 
 :confetti_ball: With the location strategies, no need to take care of x, y and z anymore when moving most items! You can even create custom location strategies for specific game rules.
 
-[Learn move about location strategies](features/location-strategies.md)
+[Learn more about location strategies](features/location-strategies.md)

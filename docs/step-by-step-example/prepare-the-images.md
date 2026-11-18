@@ -17,10 +17,11 @@ enough. Rounded borders and shadows are done using CSS.
 
 For images that are irregular, use transparency, and include the shadow in the image:
 - Size the image like usual
-- Add 10 pixels on every side
-- Add a 10 pixels all-around shadow
+- Add a margin on every side for the shadow
+- Add an all-around shadow with no offset. Its length depends on the thickness of the piece: 15 to 20 pixels for cardboard, 20 to 25 pixels and denser for a wooden piece
+- Set `transparency = true` in the Material Description, so that no rectangular shadow is added by CSS
 
-:warning: To get the right images ratio, you need to consider that your item is now 0.2 centimeters higher and larger.
+:warning: To get the right images ratio, you need to consider that your item is now larger and higher by twice the margin.
 
 :bulb: `vite-imagetools` converts **every** image imported from `app/src` to WebP at build time, whatever
 its source format, to save bandwidth.

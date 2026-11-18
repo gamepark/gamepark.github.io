@@ -30,7 +30,7 @@ Because of their nature, custom moves will not be triggered by moving some mater
 
 ```typescript jsx
 const pass = useLegalMove(isCustomMoveType(CustomMoveType.Pass))
-return <Trans defaults="header.play-or-pass" components={{
+return <Trans i18nKey="header.play-or-pass" components={{
   pass: <PlayMoveButton move={pass}/>
 }}/>
 ```

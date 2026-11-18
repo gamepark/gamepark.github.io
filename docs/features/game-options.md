@@ -54,6 +54,8 @@ export class GameTemplateSetup extends MaterialGameSetup {
 }
 ```
 
+Since framework **v7.8**, the options are also recorded in the game state: read `this.game.options` in the rules instead of copying them into the memory. The field is absent from games created before that version.
+
 ## Where the texts go
 
 Publish one file per locale in `app/public/options/{locale}.json`, beside the translations your game
@@ -122,6 +124,15 @@ identities: {
 ```
 
 :warning: With identities, `this.game.players` contains those identifiers in a random order.
+
+An option can decide whether players hold identities at all. When `requires` does not hold, no identity is assigned and players are numbered, as in a game declaring none:
+
+```typescript
+identities: {
+  values: getEnumValues(Faction),
+  requires: [{ option: 'chooseFactions', values: [true] }]
+}
+```
 
 **You also need one image per identity**, used in the friendly game creation form. Put them in
 `app/public`, named `player-id-<value>.png` — `player-id-1.png`, `player-id-2.png`, etc. They may have
@@ -312,15 +323,4 @@ Tell Game Park what your game needs; do not try to express it in the spec.
 
 ## Migrating from v1
 
-1. Replace `OptionsSpec<YourOptions>` with `OptionsSpecV2` and add `specVersion: 2` and `players`.
-2. Turn each option into `{ kind: 'boolean' | 'enum' | 'enum-set', values }`. Keep referencing your enums.
-3. Move `players.id` to `identities`, `players.team` to `teams`.
-4. Move every `label`, `help` and `warn` text into `app/public/options/{locale}.json` under the
-   convention keys above.
-5. Rewrite `validate` as `playerCount`, `requires` or `forbidden-combination`, keeping the i18n keys your
-   `OptionsValidationError` used.
-6. Drop `subscriberRequired`, `competitiveDisabled` and `competitivePlayers`, and tell Game Park.
-7. Export the new constant from `rules/src/index.ts` and pass it to `<GameProvider optionsSpec={…}>`.
-8. Require `"@gamepark/rules-api": ">=7.7"` in `rules/package.json`.
-
-The whole catalogue has been migrated, so any released game is an example.
+Follow the [migration guide to v7.7](troubleshooting/v7.7-migration-guide.md). The whole catalogue has been migrated, so any released game is an example.

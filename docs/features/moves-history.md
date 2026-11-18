@@ -4,7 +4,7 @@ In many game, it is nice to be able to see what happened from the beginning. Thi
 
 All the logs appears inside the top-left menu.
 
-In `index.tsx`, add the history in the GameProvider:
+In `app/src/main.tsx`, add the history in the GameProvider:
 
 ```typescript jsx
 <GameProvider logs={new MyGameHistory()}/>
@@ -23,7 +23,7 @@ A `MovePlayedLogDescription` contains:
 
 Logs can also appear on top of the table for a short period of time after they are played (we call that "live logs").
 
-To enable Live Logs, add this in `App.txs`:
+To enable Live Logs, add this in `App.tsx`:
 
 ```typescript jsx
 {!loading && <LiveLogContainer css={liveLogCss} /> }

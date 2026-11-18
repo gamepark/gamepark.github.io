@@ -19,11 +19,11 @@ Organize your images by language in the images folder:
 ```
 app/src/images/cards/
 ├── en/
-│   ├── Card_1_EN_FirstCard.jpg
-│   └── Card_2_EN_SecondCard.jpg
+│   ├── Card_1_EN_FirstCard.webp
+│   └── Card_2_EN_SecondCard.webp
 └── fr/
-    ├── Card_1_FR_FirstCard.jpg
-    └── Card_2_FR_SecondCard.jpg
+    ├── Card_1_FR_FirstCard.webp
+    └── Card_2_FR_SecondCard.webp
 ```
 
 ### 2. Create a localized MaterialDescription
@@ -34,8 +34,8 @@ Create a new MaterialDescription class that extends the original one and overrid
 // FrenchCardDescription.ts
 import { Card } from '@gamepark/my-game/material/Card'
 import { MyCardDescription } from './MyCardDescription'
-import FirstCard_FR from '../images/cards/fr/Card_1_FR_FirstCard.jpg'
-import SecondCard_FR from '../images/cards/fr/Card_2_FR_SecondCard.jpg'
+import FirstCard_FR from '../images/cards/fr/Card_1_FR_FirstCard.webp'
+import SecondCard_FR from '../images/cards/fr/Card_2_FR_SecondCard.webp'
 
 class FrenchCardDescription extends MyCardDescription {
   images = {

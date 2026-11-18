@@ -8,7 +8,7 @@ Create a new file to describe your item. Here is a simple example:
 
 ```typescript
 import { BoardDescription } from '@gamepark/react-game'
-import MainBoard from '../images/boards/MainBoard.jpg'
+import MainBoard from '../images/boards/MainBoard.webp'
 
 class MainBoardDescription extends BoardDescription {
   width = 20

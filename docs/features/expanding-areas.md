@@ -12,7 +12,7 @@ You can easily center the tableau in the area based on the boundaries of the car
 
 ```typescript jsx
 const { xMax, xMin, yMax, yMin } = new TableauHelper(context.rules.game, location.player!).boundaries
-const { x, y } = this.getBaseCoordinates(location, context)
+const { x, y } = super.getCoordinates(location, context)
 const deltaX = (xMin + xMax) / 2
 const deltaY = (yMin + yMax) / 2
 return {

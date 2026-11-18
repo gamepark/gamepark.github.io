@@ -44,4 +44,4 @@ Once the dependencies are install, you can run this command to start a debug ses
 
 It will start a local server on port 3000. Then open your browser at this url: http://localhost:3000/
 
-:bulb: we use [Create React App](https://github.com/facebook/create-react-app) to start and debug the web app.
+:bulb: we use [Vite](https://vite.dev/) to start and debug the web app.

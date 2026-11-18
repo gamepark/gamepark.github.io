@@ -20,7 +20,7 @@ Here are some guidelines:
 
 ## The tutorial class
 
-The tutorial class must be called inside [app/src/index.tsx](https://github.com/gamepark/architects-of-amytis/blob/main/app/src/index.tsx):
+The tutorial class must be called inside [app/src/main.tsx](https://github.com/gamepark/architects-of-amytis/blob/main/app/src/main.tsx):
 
 ```typescript jsx
     <GameProvider {/* ... */}
@@ -116,11 +116,11 @@ export class Tutorial {
   // ...
   steps: TutorialStep[] = [{
     popup: {
-      text: () => <Trans defaults="tuto.welcome" components={{ 
+      text: () => <Trans i18nKey="tuto.welcome" components={{ 
         bold: <strong/>
-      }}/>
-    },
-    position: { x: 10, y: -10 }
+      }}/>,
+      position: { x: 10, y: -10 }
+    }
   },
   // ...
   ]

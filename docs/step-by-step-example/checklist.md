@@ -10,7 +10,7 @@ Once the project is complete, before it can hit production you need to check tha
   - It plays whole games to the end, at every player count
   - It never reads hidden information: the framework gives it the full game state
   - It answers in about 1 second at most, or runs in a worker
-- Hovering items works everywhere:
+- [Hovering items](features/hover-items.md) works everywhere:
   - Every card or tile whose text matters zooms until it is readable
   - The zoom stays entirely on screen, including at the edges of the table
   - Nothing essential is available only on hover, since mobile devices have none

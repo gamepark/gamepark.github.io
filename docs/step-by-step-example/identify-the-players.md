@@ -26,7 +26,7 @@ You will also need to update the [Game Options](features/game-options.md?id=play
 If your game does not provide any way to identify the players, you can:
 
 1. Replace any reference to `PlayerColor` in the code with the `number` type.
-2. Remove the PlayerOptions from the [Game Options](../game-options.md).
+2. Remove `identities` from the [Game Options](features/game-options.md?id=no-player-identity).
 3. Delete `/rules/src/PlayerColor.ts`
 
 Game Park will automatically set a sequence of numbers (1, 2, 3, 4, ...) as the player ids.

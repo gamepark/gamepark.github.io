@@ -69,7 +69,7 @@ Have a look at [ChateauComboCardHelp](https://github.com/gamepark/chateau-combo/
 
 You can create links to open another help dialog easily:
 ```typescript jsx
-<Trans defaults="some.i18n.key" components={{
+<Trans i18nKey="some.i18n.key" components={{
   link: <PlayMoveButton css={linkButtonCss} move={displayMaterialHelp(MaterialType.Whatever)} transient />
 }}/>
 ```
@@ -78,39 +78,7 @@ Use `displayMaterialHelp` to open a dialog about some item, and `displayLocation
 
 ## Help dialogs for locations
 
-Sometime, instead of showing the help for the clicked item, you want to display the list of items inside the same location, for example when you want to display the list of cards inside a discard when you click on the top card.
-
-To do that, the first thing is to redirect the click on the card to displaying the help for the location instead inside the [Material Description](https://github.com/gamepark/chateau-combo/blob/main/app/src/material/ChateauComboCardDescription.tsx):
-
-```typescript jsx
-export class ChateauComboCardDescription extends CardDescription {
-  displayHelp(item: MaterialItem, context: ItemContext) {
-    if (item.location.type === LocationType.Discard) return displayLocationHelp(item.location)
-    return super.displayHelp(item, context)
-  }
-}
-```
-
-Then you need to create the help dialog for the location, inside the Location Description:
-
-```typescript jsx
-class DiscardDescription extends DropAreaDescription {
-  help = DiscardHelp
-}
-```
-
-Finally, you can implement a help component for the location that displays the list of items, like in [Château Combo DiscardHelp](https://github.com/gamepark/chateau-combo/blob/main/app/src/locators/component/DiscardHelp.tsx).
-
-:warning: Make sure each item can be clicked to display the help for that item:
-
-```typescript jsx
-<MaterialComponent
-  type={MaterialType.Card}
-  itemId={card.id}
-  css={pointerCursorCss}
-  onClick={() => play(displayMaterialHelp(MaterialType.Card, card, index), { transient: true })}
-/>
-```
+A location can have its own help dialog, with `help` in its Location Description. See [Display all the discard](features/display-all-the-discard.md) for the most common use case.
 
 ## The navigation buttons
 
@@ -124,7 +92,7 @@ You can override the default behavior like in [Boreal](https://github.com/gamepa
 
 ## Help dialogs for Rules
 
-You can create Help Dialogs that are attached to a RuleId inside App.tsx like in [Along History](https://github.com/gamepark/along-history/blob/main/app/src/index.tsx#L22):
+You can create Help Dialogs that are attached to a RuleId inside `app/src/main.tsx` like in [Along History](https://github.com/gamepark/along-history/blob/main/app/src/main.tsx#L19):
 
 ```typescript jsx
 <GameProvider /* ... */ rulesHelp={RulesHelp}>

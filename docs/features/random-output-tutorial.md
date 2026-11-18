@@ -13,7 +13,7 @@ export class Tutorial extends MaterialTutorial<Monster, MaterialType, LocationTy
   steps: TutorialStep[] = [
     {
       popup: {
-        text: () => <Trans defaults="tuto.roll" components={{ bold: <strong/> }}/>,
+        text: () => <Trans i18nKey="tuto.roll" components={{ bold: <strong/> }}/>,
         position: { x: 30 }
       },
       focus: (game: MaterialGame) => ({

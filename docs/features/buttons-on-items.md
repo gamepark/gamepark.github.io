@@ -13,11 +13,11 @@ Buttons are usually used to play a move:
 ```typescript jsx
 export class PowerCardDescription extends CardDescription {
   getItemMenu(item: MaterialItem, context: ItemContext, legalMoves: MaterialMove[]) {
-    const buy = moves.find(move => move.location.type === LocationType.BuyArea)
+    const buy = legalMoves.find(move => isMoveItemType(MaterialType.PowerCard)(move) && move.location.type === LocationType.BuyArea)
     return <>
       {this.getHelpButton(item, context, { angle: 20, radius: 5 })}
       {buy &&
-        <ItemMenuButton label={<Trans defaults="buy"/>} angle={50} radius={4} move={buy}>
+        <ItemMenuButton label={<Trans i18nKey="buy"/>} angle={50} radius={4} move={buy}>
           <FontAwesomeIcon icon={faHandBackFist}/>
         </ItemMenuButton>
       }

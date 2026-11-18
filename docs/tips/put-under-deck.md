@@ -2,7 +2,7 @@
 
 When you have a deck of cards, you need to identify the order of the cards.
 
-The standard way to do that is to use a [PositiveLocationStrategy](features/location-strategies.md#positive-location-strategy).
+The standard way to do that is to use a [PositiveSequenceStrategy](features/location-strategies.md#positive-sequence-strategy).
 
 This way, the `location.x` property with go from x=0 to x=(number of item - 1).
 
@@ -14,4 +14,4 @@ To put a card under a deck, simply move it to the x=0 position:
 card.moveItem({ type: LocationType.Deck, x: 0 })
 ```
 
-The PositiveLocationStrategy will automatically increment all the other cards in the deck by 1.
+The PositiveSequenceStrategy will automatically increment all the other cards in the deck by 1.

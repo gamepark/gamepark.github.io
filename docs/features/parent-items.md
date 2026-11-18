@@ -44,7 +44,7 @@ In that case, you must use the `location.parent` property to refer to the parent
 
 ```typescript
 const cardIndex = this.material(MaterialType.Card).location(LocationType.Somewhere)/*other filters...*/.getIndex()
-this.createItem(MaterialType.Token, { location: { type: LocationType.OnCard, parent: cardIndex } })
+this.material(MaterialType.Token).createItem({ location: { type: LocationType.OnCard, parent: cardIndex } })
 ```
 
 Inside the locator, you only need to specify the parent item type:

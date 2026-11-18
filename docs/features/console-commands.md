@@ -14,13 +14,23 @@ In the console of you browser, in development mode, we provide a few commands to
 
 - Take control of player with id 2: `game.changePlayer(2)`
 - Watch as a spectator: `game.changePlayer()`
+- Open another tab seated as player 2: `game.openPlayer(2)`
+- Rename player 2: `game.setPlayerName('Alice', 2)`
+
+## Start the tutorial
+
+`game.tutorial()` starts the tutorial. :warning: Like `game.new()`, it erases the current game from your local storage.
+
+## Test the timer
+
+`game.timer(30)` gives you 30 seconds of play time, and `game.timer(30, 2)` gives them to player 2.
 
 ## Make other players play
 
-Because the application knows all the [legal moves](step-by-step-example/player-turn.md), we can ask other players to play random legal moves:
+Because the application knows all the [legal moves](step-by-step-example/player-turn.md), we can ask other players to play. They play random legal moves, unless the game provides a [Tutorial AI](features/tutorial-ai.md):
 
-- to activate random bots: `game.bot()` (or `game.monkeyOpponents()`)
-- to deactivate random bots: `game.bot(false)` (or `game.monkeyOpponents(false)`)
+- to activate the bots: `game.bot()` (or `game.monkeyOpponents()`)
+- to deactivate the bots: `game.bot(false)` (or `game.monkeyOpponents(false)`)
 
 :bulb: to watch a game played by bots, you can watch as a spectator then activate the bots! They will stop after 100 moves (a security), but you can restart the bots multiple times.
 

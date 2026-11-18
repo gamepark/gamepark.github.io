@@ -23,7 +23,7 @@ export class MyGameScoring implements ScoringDescription {
   getScoringHeader(key: ScoringKeys) {
     switch (key) {
       case ScoringKeys.SomeSubScoreType:
-        return <Trans defaults="game-over.some.score.type" />
+        return <Trans i18nKey="game-over.some.score.type" />
       //...
     }
   }
@@ -31,7 +31,7 @@ export class MyGameScoring implements ScoringDescription {
   getScoringPlayerData(key: ScoringKeys, player: number, rules: MyGameRules) {
     switch (key) {
       case ScoringKeys.SomeSubScoreType:
-        return <Trans defaults="game-over.some.score.type" />
+        return <Trans i18nKey="game-over.some.score.type" />
       //...
     }
   }

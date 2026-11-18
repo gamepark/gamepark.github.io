@@ -53,10 +53,10 @@ Now, inside the MaterialDescription in the app, you can map each id with its ima
 
 ```typescript
 import { CardDescription } from '@gamepark/react-game'
-import BlueCard from '../images/cards/BlueCard.jpg'
-import RedCard from '../images/cards/RedCard.jpg'
-import GreenCard from '../images/cards/GreenCard.jpg'
-import YellowCard from '../images/cards/YellowCard.jpg'
+import BlueCard from '../images/cards/BlueCard.webp'
+import RedCard from '../images/cards/RedCard.webp'
+import GreenCard from '../images/cards/GreenCard.webp'
+import YellowCard from '../images/cards/YellowCard.webp'
 
 class SomeCardDescription extends CardDescription {
   images = {
