@@ -8,16 +8,26 @@ We use that convention as it is a good tradeoff between bandwidth usage and imag
 
 ## File types
 
-For image with regular shapes (rectangular shapes like cards, boards and most tokens), use JPG format. Rounded borders and shadows are done using CSS.
+**Use WebP for every image.** The build converts each imported image to WebP anyway (see below), so a JPG
+or a PNG source is compressed twice, once by you and once by the build, for no gain. Save your images as
+**lossless WebP**: the build does the lossy compression, and it does it on a pristine source.
 
-For images that are irregular, use PNG with transparency, and shadow included:
+For images with regular shapes (rectangular shapes like cards, boards and most tokens), an opaque image is
+enough. Rounded borders and shadows are done using CSS.
+
+For images that are irregular, use transparency, and include the shadow in the image:
 - Size the image like usual
 - Add 10 pixels on every side
 - Add a 10 pixels all-around shadow
 
 :warning: To get the right images ratio, you need to consider that your item is now 0.2 centimeters higher and larger.
 
-:bulb: The framework will automatically generate webp versions of every image to save bandwidth.
+:bulb: `vite-imagetools` converts **every** image imported from `app/src` to WebP at build time, whatever
+its source format, to save bandwidth.
+
+:warning: The game therefore ships WebP only, with no fallback to the original format: on a browser
+without WebP support, the image is not displayed at all. WebP is supported by Chrome and Edge since 2018,
+Firefox since 2019 and Safari since 2020 (Safari 14, iOS 14).
 
 ## Folder for images
 
